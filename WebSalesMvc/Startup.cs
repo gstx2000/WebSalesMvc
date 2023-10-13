@@ -9,6 +9,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using WebSalesMvc.Data;
+using Microsoft.EntityFrameworkCore.Design;
+using System.IO;
 
 namespace WebSalesMvc
 {
@@ -17,6 +21,24 @@ namespace WebSalesMvc
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+        }
+
+        public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<WebSalesMvcContext>
+        {
+            public WebSalesMvcContext CreateDbContext(string[] args)
+            {
+                IConfigurationRoot configuration = new ConfigurationBuilder()
+                    .SetBasePath(Directory.GetCurrentDirectory())
+                    .AddJsonFile("appsettings.json")
+                    .Build();
+
+                var builder = new DbContextOptionsBuilder<WebSalesMvcContext>();
+                var connectionString = configuration.GetConnectionString("WebSalesMvcContext");
+
+                builder.UseMySql(connectionString);
+
+                return new WebSalesMvcContext(builder.Options);
+            }
         }
 
         public IConfiguration Configuration { get; }
@@ -33,6 +55,10 @@ namespace WebSalesMvc
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<WebSalesMvcContext>(options =>
+                  options.UseMySql(Configuration.GetConnectionString("WebSalesMvcContext"), builder =>
+builder.MigrationsAssembly("WebSalesMvc")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

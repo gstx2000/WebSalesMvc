@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - WebSalesMvc</title>
-
+    <title>@ViewData["Title"] - Sua loja aqui</title>
+    
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-darkly.css" />
         <link rel="stylesheet" href="~/css/site.css" />
@@ -26,13 +26,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">WebSalesMvc</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Sua loja aqui</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-area="" asp-controller="Sellers" asp-action="Index">Vendedores</a></li>
+                    <li><a asp-area="" asp-controller="Departments" asp-action="Index">Departamentos</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contato</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">Sobre</a></li>
+
+
                 </ul>
             </div>
         </div>
@@ -44,7 +48,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2023 - WebSalesMvc</p>
+            <p>&copy; 2023 - Sua loja aqui</p>
         </footer>
     </div>
 

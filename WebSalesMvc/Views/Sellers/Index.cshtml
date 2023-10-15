@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<WebSalesMvc.Models.Seller>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Vendedores";
 
 }
 <h2>Vendedores</h2>
@@ -25,6 +25,9 @@
              <th>
                 @Html.DisplayNameFor(model => model.Birthdate)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DepartmentId)
+            </th>
             <th></th>
          </tr>
     </thead>
@@ -46,6 +49,9 @@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Birthdate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DepartmentId)
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id">Editar</a>

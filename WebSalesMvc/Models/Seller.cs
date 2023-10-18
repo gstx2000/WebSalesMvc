@@ -9,23 +9,30 @@ namespace WebSalesMvc.Models
     {
         public int Id { get; set; }
 
+
+
         [Display(Name = "Nome")]
+        [Required(ErrorMessage = "Nome obrigatório")]
+        [StringLength(50, MinimumLength = 3, ErrorMessage = "Nome deve ser maior que 3 letras.")]
         public string Name { get; set; }
 
         [Display(Name = "Telefone")]
+        [StringLength(11, ErrorMessage = "Telefone inválido.")]
         public string Phone { get; set; }
 
         [DataType(DataType.EmailAddress)]
+        [StringLength(50, ErrorMessage = "Email inválido.")]
         public string Email   { get; set; }
 
         [Display(Name = "Salário")]
+        [Required(ErrorMessage = "Salário obrigatório.")]
         [DisplayFormat(DataFormatString = "{0:F2}")]
          public double BaseSalary { get; set; }
 
+        [Required(ErrorMessage = "Insira a data de nascimento antes de continuar.")]
         [Display(Name = "Data de nascimento")]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
-
-        [DataType(DataType.Date)]
+         [DataType(DataType.Date)]
         public DateTime Birthdate { get; set; }
 
         [Display(Name = "Departamento")]

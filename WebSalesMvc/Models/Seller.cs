@@ -9,15 +9,13 @@ namespace WebSalesMvc.Models
     {
         public int Id { get; set; }
 
-
-
         [Display(Name = "Nome")]
         [Required(ErrorMessage = "Nome obrigatório")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Nome deve ser maior que 3 letras.")]
         public string Name { get; set; }
 
         [Display(Name = "Telefone")]
-        [StringLength(11, ErrorMessage = "Telefone inválido.")]
+        [StringLength(11, MinimumLength = 10, ErrorMessage = "Telefone inválido.")]
         public string Phone { get; set; }
 
         [DataType(DataType.EmailAddress)]

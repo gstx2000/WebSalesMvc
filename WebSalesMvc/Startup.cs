@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
@@ -14,6 +15,8 @@ using WebSalesMvc.Data;
 using Microsoft.EntityFrameworkCore.Design;
 using System.IO;
 using WebSalesMvc.Services;
+using System.Globalization;
+
 
 namespace WebSalesMvc
 {
@@ -69,6 +72,16 @@ builder.MigrationsAssembly("WebSalesMvc")));
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            var brl = new CultureInfo("pt-BR");
+            var localizationOptions = new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture(brl),
+                SupportedCultures = new List<CultureInfo> { brl },
+                SupportedUICultures = new List<CultureInfo> { brl }
+            };
+            
+            app.UseRequestLocalization(localizationOptions);    
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

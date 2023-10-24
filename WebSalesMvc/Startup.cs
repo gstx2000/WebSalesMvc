@@ -61,12 +61,10 @@ namespace WebSalesMvc
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<WebSalesMvcContext>(options =>
-                  options.UseMySql(Configuration.GetConnectionString("WebSalesMvcContext"), builder =>
-builder.MigrationsAssembly("WebSalesMvc")));
-
+                  options.UseMySql(Configuration.GetConnectionString("WebSalesMvcContext"), builder => builder.MigrationsAssembly("WebSalesMvc")));
             services.AddScoped<SellerService>();
             services.AddScoped<DepartmentService>();
-
+            services.AddScoped<SalesRecordService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

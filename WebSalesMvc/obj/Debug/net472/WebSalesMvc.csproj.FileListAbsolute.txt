@@ -184,4 +184,6 @@ C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\D
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Sellers\Delete.cshtml.g.cs
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Sellers\Details.cshtml.g.cs
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Sellers\Edit.cshtml.g.cs
-C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\SalesRecords\SalesRecords.cshtml.g.cs
+C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\SalesRecords\GroupingSearch.cshtml.g.cs
+C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\SalesRecords\Index.cshtml.g.cs
+C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\SalesRecords\SimpleSearch.cshtml.g.cs

@@ -18,6 +18,15 @@ namespace WebSalesMvc.Services
             _context = context;
         }
 
+        public async Task<List<SalesRecord>> FindAllAsync()
+        {
+            return await _context.SalesRecord
+                .Include(x => x.Seller)
+                .Include(x => x.Seller.Department)
+                .OrderByDescending(x => x.Date)
+                .ToListAsync();
+        }
+
         public async Task<List<SalesRecord>> FindByDateAsync(DateTime? minDate, DateTime? maxDate)
         {
             var result = from obj in _context.SalesRecord select obj;
@@ -58,5 +67,13 @@ namespace WebSalesMvc.Services
                 .GroupBy(x => x.Seller.Department)
                 .ToListAsync();
         }
+
+        public async Task InsertAsync(SalesRecord salesRecord)
+        {
+            _context.SalesRecord.Add(salesRecord);
+
+            await _context.SaveChangesAsync();
+        }
     }
+
 }

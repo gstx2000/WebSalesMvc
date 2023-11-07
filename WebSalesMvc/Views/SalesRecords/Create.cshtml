@@ -1,0 +1,49 @@
+﻿@model WebSalesMvc.Models.SalesRecordsCreateViewModel
+
+Create@{
+    ViewData["Title"] = "Registrar venda";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SalesRecord.Date" class="control-label"></label>
+                <input asp-for="SalesRecord.Date" class="form-control" />
+                <span asp-validation-for="SalesRecord.Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SalesRecord.Amount" class="control-label"></label>
+                <input asp-for="SalesRecord.Amount" class="form-control" />
+                <span asp-validation-for="SalesRecord.Amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SalesRecord.Status" class="control-label">Status</label>
+                <select asp-for="SalesRecord.Status" asp-items="Html.GetEnumSelectList<WebSalesMvc.Models.Enums.SaleStatus>()" class="form-control">
+                    <option value="">Selecione um Status</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="SalesRecord.Seller.Id" class="control-label">Vendedor</label>
+                    <select asp-for="SalesRecord.Seller.Id" asp-items="@(new SelectList(Model.Sellers, "Id", "Name"))" class="form-control">
+                        <option value="">Selecione um vendedor</option>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Registrar" class="btn btn-default" />
+                    </div>
+</form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

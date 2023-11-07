@@ -11,7 +11,6 @@ namespace WebSalesMvc.Models
 
         [Display(Name = "Nome")]
         [Required(ErrorMessage = "Nome obrigatório")]
-        [StringLength(50, MinimumLength = 3, ErrorMessage = "Nome deve ser maior que 3 letras.")]
         public string Name { get; set; }
 
         [Display(Name = "Telefone")]

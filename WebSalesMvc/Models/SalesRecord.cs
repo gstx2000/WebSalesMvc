@@ -8,18 +8,23 @@ namespace WebSalesMvc.Models
     {
         public int Id { get; set; }
 
-        [Display(Name = "Nome")]
+        [Required]
+        [Display(Name = "Data")]
         public DateTime Date { get; set; }
-
+        
+        [Required]
         [Display(Name = "Valor")]
         public double Amount { get; set; }
-
+        
+        [Required]
         [Display(Name = "Status")]
         public SaleStatus Status { get; set; }
-
+       
+        [Required]
         [Display(Name = "Vendedor")]
         public Seller Seller { get; set; }
 
+      
         public SalesRecord()
         {
         }

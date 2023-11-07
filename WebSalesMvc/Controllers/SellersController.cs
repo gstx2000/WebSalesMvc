@@ -39,7 +39,7 @@ namespace WebSalesMvc.Controllers
             if (!ModelState.IsValid)
             {
                 var departments = await _departmentService.FindAllAsync();
-                var viewModel = new SellerFormViewModel { Seller = seller, Departments = departments };
+                var viewModel = new SellerFormViewModel { Seller = seller };
                 return View(viewModel);
             }
 

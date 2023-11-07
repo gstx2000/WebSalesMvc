@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\WebSalesMvc",
+    "\\WebSalesMvc\\Controllers",
+    "\\WebSalesMvc\\Models",
+    "\\WebSalesMvc\\Services",
+    "\\WebSalesMvc\\Views",
+    "\\WebSalesMvc\\Views\\SalesRecords"
+  ],
+  "SelectedNode": "\\WebSalesMvc\\Controllers\\SalesRecordsController.cs",
+  "PreviewInSolutionExplorer": false
+}

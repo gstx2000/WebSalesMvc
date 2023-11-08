@@ -71,7 +71,6 @@ namespace WebSalesMvc.Services
         public async Task InsertAsync(SalesRecord salesRecord)
         {
             _context.SalesRecord.Add(salesRecord);
-
             await _context.SaveChangesAsync();
         }
     }

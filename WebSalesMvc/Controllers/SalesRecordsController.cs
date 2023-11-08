@@ -72,31 +72,17 @@ namespace WebSalesMvc.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(SalesRecordsCreateViewModel viewModel)
         {
-            Console.WriteLine("Date: " + viewModel.SalesRecord.Date);
-            Console.WriteLine("Amount: " + viewModel.SalesRecord.Amount);
-            Console.WriteLine("Status: " + viewModel.SalesRecord.Status);
-            Console.WriteLine("Seller ID: " + viewModel.SalesRecord.Seller.Id);
-
             if (ModelState.IsValid)
             {
                 var salesRecord = viewModel.SalesRecord;
-                _context.Add(salesRecord);
-                await _context.SaveChangesAsync();
+                await _salesRecordService.InsertAsync(salesRecord);
                 return RedirectToAction(nameof(Index));
             }
-            else
-            {
-                var errors = ModelState.Values.SelectMany(v => v.Errors);
-                foreach (var error in errors)
-                {
-                    Console.WriteLine(error.ErrorMessage);
-                }
-
                 var sellers = await _sellerService.FindAllAsync();
                 viewModel.Sellers = sellers; 
 
                 return View(viewModel);
-            }
+            
         }
 
         public async Task<IActionResult> Edit(int? id)

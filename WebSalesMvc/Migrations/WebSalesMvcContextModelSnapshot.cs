@@ -17,6 +17,24 @@ namespace WebSalesMvc.Migrations
                 .HasAnnotation("ProductVersion", "2.1.14-servicing-32113")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("WebSalesMvc.Models.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("DepartmentId");
+
+                    b.Property<string>("Description");
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DepartmentId");
+
+                    b.ToTable("Category");
+                });
+
             modelBuilder.Entity("WebSalesMvc.Models.Department", b =>
                 {
                     b.Property<int>("Id")
@@ -38,7 +56,7 @@ namespace WebSalesMvc.Migrations
 
                     b.Property<DateTime>("Date");
 
-                    b.Property<int?>("SellerId");
+                    b.Property<int>("SellerId");
 
                     b.Property<int>("Status");
 
@@ -60,11 +78,14 @@ namespace WebSalesMvc.Migrations
 
                     b.Property<int>("DepartmentId");
 
-                    b.Property<string>("Email");
+                    b.Property<string>("Email")
+                        .HasMaxLength(50);
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired();
 
-                    b.Property<string>("Phone");
+                    b.Property<string>("Phone")
+                        .HasMaxLength(11);
 
                     b.HasKey("Id");
 
@@ -73,11 +94,20 @@ namespace WebSalesMvc.Migrations
                     b.ToTable("Seller");
                 });
 
+            modelBuilder.Entity("WebSalesMvc.Models.Category", b =>
+                {
+                    b.HasOne("WebSalesMvc.Models.Department", "Department")
+                        .WithMany()
+                        .HasForeignKey("DepartmentId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
             modelBuilder.Entity("WebSalesMvc.Models.SalesRecord", b =>
                 {
                     b.HasOne("WebSalesMvc.Models.Seller", "Seller")
                         .WithMany("Sales")
-                        .HasForeignKey("SellerId");
+                        .HasForeignKey("SellerId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("WebSalesMvc.Models.Seller", b =>

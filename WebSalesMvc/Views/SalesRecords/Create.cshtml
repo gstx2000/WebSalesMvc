@@ -28,8 +28,8 @@ Create@{
                 </select>
                 </div>
                 <div class="form-group">
-                    <label asp-for="SalesRecord.Seller.Id" class="control-label">Vendedor</label>
-                    <select asp-for="SalesRecord.Seller.Id" asp-items="@(new SelectList(Model.Sellers, "Id", "Name"))" class="form-control">
+                    <label asp-for="SalesRecord.SellerId" class="control-label">Vendedor</label>
+                    <select asp-for="SalesRecord.SellerId" asp-items="@(new SelectList(Model.Sellers, "Id", "Name"))" class="form-control">
                         <option value="">Selecione um vendedor</option>
                     </select>
                     </div>

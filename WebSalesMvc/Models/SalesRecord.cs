@@ -20,13 +20,10 @@ namespace WebSalesMvc.Models
         [Display(Name = "Status")]
         public SaleStatus Status { get; set; }
        
-        [Required]
         [Display(Name = "Vendedor")]
         public Seller Seller { get; set; }
         
         public int SellerId { get; set; }
-
-
 
         public SalesRecord()
         {

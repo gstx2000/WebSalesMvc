@@ -16,6 +16,12 @@
         <dd>
             @Html.DisplayFor(model => model.Name)
         </dd>
+        <dt>
+            Número de vendedores:
+        </dt>
+        <dd>
+            @Model.GetSellers().Count()
+        </dd>
     </dl>
 </div>
 <div>

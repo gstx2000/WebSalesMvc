@@ -47,13 +47,13 @@ namespace WebSalesMvc.Controllers
         public async Task<IActionResult> Create()
         {
             var departments = await _departmentService.FindAllAsync();
-            var viewModel = new CategoryFormViewModel { Departments = departments };
+            var viewModel = new CategoryFormViewModel { Departments = departments, Category = new Category() };
             return View(viewModel);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create( Category category)
+        public async Task<IActionResult> Create(Category category)
         {
             if (ModelState.IsValid)
             {
@@ -62,9 +62,10 @@ namespace WebSalesMvc.Controllers
             }
 
             var departments = await _departmentService.FindAllAsync();
-            var viewModel = new CategoryFormViewModel { Category = category };
+            var viewModel = new CategoryFormViewModel { Category = category, Departments = departments };
             return View(viewModel);
         }
+
 
         public async Task<IActionResult> Edit(int? id)
         {
@@ -73,15 +74,15 @@ namespace WebSalesMvc.Controllers
                 return NotFound();
             }
 
-            var category = await _categoryService.FindbyIdAsync(id.Value);
+            var obj = await _categoryService.FindbyIdAsync(id.Value);
 
-            if (category == null)
+            if (obj == null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Id não encontrado." });
             }
 
             List<Department> departments = await _departmentService.FindAllAsync();
-            CategoryFormViewModel viewModel = new CategoryFormViewModel { Category = category, Departments = departments };
+            CategoryFormViewModel viewModel = new CategoryFormViewModel { Category = obj, Departments = departments };
             return View(viewModel);
         }
 
@@ -91,7 +92,7 @@ namespace WebSalesMvc.Controllers
         {
             if (id != category.Id)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new { message = "Id incompatível." });
             }
 
             if (!ModelState.IsValid)

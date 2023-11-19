@@ -1,6 +1,6 @@
 ﻿@model WebSalesMvc.Models.SalesRecordsCreateViewModel
 
-Create@{
+@{
     ViewData["Title"] = "Registrar venda";
 }
 
@@ -9,11 +9,11 @@ Create@{
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="SalesRecord.Date" class="control-label"></label>
-                <input asp-for="SalesRecord.Date" class="form-control" />
+                <input asp-for="SalesRecord.Date" class="form-control" value="@DateTime.Today.ToString("yyyy-MM-dd")" />
                 <span asp-validation-for="SalesRecord.Date" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -27,23 +27,22 @@ Create@{
                     <option value="">Selecione um Status</option>
                 </select>
                 </div>
-                <div class="form-group">
-                    <label asp-for="SalesRecord.SellerId" class="control-label">Vendedor</label>
-                    <select asp-for="SalesRecord.SellerId" asp-items="@(new SelectList(Model.Sellers, "Id", "Name"))" class="form-control">
-                        <option value="">Selecione um vendedor</option>
-                    </select>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" value="Registrar" class="btn btn-default" />
-                    </div>
+            <div class="form-group">
+                <label asp-for="SalesRecord.SellerId" class="control-label">Vendedor</label>
+                <select asp-for="SalesRecord.SellerId" asp-items="@(new SelectList(Model.Sellers, "Id", "Name"))" class="form-control">
+                    <option value="">Selecione um vendedor</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Criar" class="btn btn-default" />
+
+                <a class="btn btn-default" asp-action="Index">Voltar</a>
+            </div>
 </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Voltar</a>
-</div>
-
 @section Scripts {
+
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

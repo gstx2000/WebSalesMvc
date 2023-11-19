@@ -33,6 +33,10 @@ namespace WebSalesMvc.Controllers
                 ViewBag.Message = "Sem registro de venda.";
                 return View();
             }
+            foreach (var record in list)
+            {
+                record.Seller = await _sellerService.FindbyIdAsync(record.SellerId);
+            }
 
             return View(list);
         }
@@ -78,11 +82,11 @@ namespace WebSalesMvc.Controllers
                 await _salesRecordService.InsertAsync(salesRecord);
                 return RedirectToAction(nameof(Index));
             }
-                var sellers = await _sellerService.FindAllAsync();
-                viewModel.Sellers = sellers; 
 
-                return View(viewModel);
-            
+            var sellers = await _sellerService.FindAllAsync();
+            viewModel.Sellers = sellers;
+
+            return View(viewModel);
         }
 
         public async Task<IActionResult> Edit(int? id)
@@ -97,14 +101,23 @@ namespace WebSalesMvc.Controllers
             {
                 return NotFound();
             }
-            return View(salesRecord);
+
+            // You may need to load related data here if necessary (e.g., Sellers).
+
+            var viewModel = new SalesRecordsCreateViewModel
+            {
+                SalesRecord = salesRecord,
+                Sellers = await _sellerService.FindAllAsync() // Load Sellers or any related data.
+            };
+
+            return View(viewModel);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Date,Amount,Status,Seller")] SalesRecord salesRecord)
+        public async Task<IActionResult> Edit(int id, SalesRecordsCreateViewModel viewModel)
         {
-            if (id != salesRecord.Id)
+            if (id != viewModel.SalesRecord.Id)
             {
                 return NotFound();
             }
@@ -113,12 +126,12 @@ namespace WebSalesMvc.Controllers
             {
                 try
                 {
-                    _context.Update(salesRecord);
+                    _context.Update(viewModel.SalesRecord);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!SalesRecordExists(salesRecord.Id))
+                    if (!SalesRecordExists(viewModel.SalesRecord.Id))
                     {
                         return NotFound();
                     }
@@ -129,8 +142,11 @@ namespace WebSalesMvc.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(salesRecord);
+
+            viewModel.Sellers = await _sellerService.FindAllAsync();
+            return View(viewModel);
         }
+
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

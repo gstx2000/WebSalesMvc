@@ -19,5 +19,27 @@ namespace WebSalesMvc.Services
         {
             return await _context.Department.OrderBy(x => x.Name).ToListAsync();
         }
+
+        public async Task<Department> FindByIdAsync(int id)
+        {
+            return await _context.Department.FindAsync(id);
+        }
+
+        public async Task AddSellerToDepartmentAsync(int departmentId, Seller seller)
+        {
+            var department = await _context.Department.FindAsync(departmentId);
+
+            if (department != null)
+            {
+                department.AddSeller(seller);
+                await _context.SaveChangesAsync();
+            }
+        }
+
+        public async Task UpdateAsync(Department department)
+        {
+            _context.Department.Update(department);
+            await _context.SaveChangesAsync();
+        }
     }
 }

@@ -14,7 +14,6 @@ namespace WebSalesMvc.Models
         public string Description { get; set; }
 
         [Display(Name = "Departamento")]
-        [Required(ErrorMessage = "Departamento obrigatório")]
         public Department Department { get; set; }
         public  int DepartmentId { get; set; }
 

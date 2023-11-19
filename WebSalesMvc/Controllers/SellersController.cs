@@ -28,24 +28,41 @@ namespace WebSalesMvc.Controllers
         public async Task<IActionResult> Create()
         {
             var departments =  await _departmentService.FindAllAsync();
+
             var viewModel = new SellerFormViewModel { Departments = departments };
             return View(viewModel);
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Seller seller)
-        {
-            if (!ModelState.IsValid)
-            {
-                var departments = await _departmentService.FindAllAsync();
-                var viewModel = new SellerFormViewModel { Seller = seller };
-                return View(viewModel);
-            }
+[HttpPost]
+[ValidateAntiForgeryToken]
+public async Task<IActionResult> Create(Seller seller)
+{
+    if (!ModelState.IsValid)
+    {
+        var departments = await _departmentService.FindAllAsync();
+        var viewModel = new SellerFormViewModel { Seller = seller, Departments = departments };
+        return View(viewModel);
+    }
 
-            await _sellerService.InsertAsync(seller);
-            return RedirectToAction(nameof(Index));
-        }
+    var department = await _departmentService.FindByIdAsync(seller.DepartmentId);
+
+    if (department == null)
+    {
+        return RedirectToAction(nameof(Error), new { message = "Departmento inválido." });
+    }
+
+    seller.Department = department;
+
+    await _sellerService.InsertAsync(seller);
+
+    // Update the department with the new seller
+    department.AddSeller(seller);
+
+    return RedirectToAction(nameof(Index));
+}
+
+
+
 
         public async Task<IActionResult> Delete(int? id)
         {

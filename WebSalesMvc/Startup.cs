@@ -17,6 +17,13 @@ using Microsoft.AspNetCore.Identity;
 using System.Net.PeerToPeer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using SendGrid;
+using Serilog;
+using Serilog.Events;
+using WebSalesMvc.Models;
+using Microsoft.Extensions.Logging;
+
 
 namespace WebSalesMvc
 {
@@ -70,6 +77,7 @@ namespace WebSalesMvc
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -77,7 +85,33 @@ namespace WebSalesMvc
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            .AddCookie(options =>
+            {
+                options.Cookie.HttpOnly = true;
+                options.ExpireTimeSpan = TimeSpan.FromDays(3); // Set the desired expiration time
+                options.LoginPath = "/Users/Login";
+                options.LogoutPath = "/Users/Logout";
+        
+            });
 
+           /*services.AddSingleton<ISendGridClient>(c =>
+            {
+                var apiKey = Configuration["SendGrid:ApiKey"];
+                return new SendGridClient(apiKey);
+            });
+
+            services.Configure<SendGridSettings>(Configuration.GetSection("SendGrid"));
+            services.AddTransient<PasswordRecoveryService>();*/
+
+            services.AddLogging(builder =>
+            {
+                builder.SetMinimumLevel(LogLevel.Debug);
+                builder.AddConsole();
+                builder.AddDebug();
+                builder.AddSerilog();
+
+            });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<WebSalesMvcContext>(options =>
@@ -86,6 +120,7 @@ namespace WebSalesMvc
             services.AddScoped<DepartmentService>();
             services.AddScoped<SalesRecordService>();
             services.AddScoped<CategoryService>();
+            services.AddScoped<PasswordRecoveryService>();
 
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseMySql(Configuration.GetConnectionString("WebSalesMvcContext"), builder =>
@@ -129,7 +164,7 @@ namespace WebSalesMvc
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             var brl = new CultureInfo("pt-BR");
             var localizationOptions = new RequestLocalizationOptions
@@ -150,6 +185,16 @@ namespace WebSalesMvc
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
+
+            loggerFactory.AddSerilog(); 
+
+            Log.Logger = new LoggerConfiguration()
+            .MinimumLevel.Debug()
+            .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+            .Enrich.FromLogContext()
+            .WriteTo.Console()  
+            .WriteTo.File("logs/WebSalesMvc.txt", rollingInterval: RollingInterval.Day) 
+            .CreateLogger();
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

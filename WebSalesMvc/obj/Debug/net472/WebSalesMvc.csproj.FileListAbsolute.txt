@@ -204,3 +204,4 @@ C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\bin\D
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\bin\Debug\net472\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Users\Login.cshtml.g.cs
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Users\Register.cshtml.g.cs
+C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Shared\_LogoutPartial.cshtml.g.cs

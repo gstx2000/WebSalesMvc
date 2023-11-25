@@ -16,12 +16,15 @@ public class UsersController : Controller
     }
 
     [HttpGet]
+    [AllowAnonymous]
     public IActionResult Register()
     {
         return View();
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
+    [AllowAnonymous]
     public async Task<IActionResult> Register(RegisterViewModel model)
     {
         if (ModelState.IsValid)
@@ -55,12 +58,15 @@ public class UsersController : Controller
 
 
     [HttpGet]
+    [AllowAnonymous]
     public IActionResult Login()
     {
         return View();
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
+    [AllowAnonymous]
     public async Task<IActionResult> Login(LoginViewModel model)
     {
         if (ModelState.IsValid)
@@ -76,5 +82,14 @@ public class UsersController : Controller
         }
 
         return View(model);
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Logout()
+    {
+        await _signInManager.SignOutAsync();
+
+        return RedirectToAction("Login");
     }
 }

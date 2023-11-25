@@ -3,7 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Sua loja aqui</title>
+    <title>@ViewData["Title"] Sua loja aqui</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+
     
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-darkly.css" />
@@ -16,20 +19,23 @@
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 </head>
+
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" data-width="1000">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Sua loja aqui</a>
+                <a asp-area="" class="navbar-brand">Sua loja aqui</a>
             </div>
-            <div class="navbar-collapse collapse">
+            <div class="navbar-collapse">
                 <ul class="nav navbar-nav">
+                @if (User.Identity.IsAuthenticated)
+                {
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Sellers" asp-action="Index">Vendedores</a></li>
                     <li><a asp-area="" asp-controller="Departments" asp-action="Index">Departamentos</a></li>
@@ -37,8 +43,14 @@
                     <li><a asp-area="" asp-controller="SalesRecords" asp-action="Index">Vendas</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contato</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">Sobre</a></li>
-
-
+                   
+                        <li>
+                            <form asp-area="" asp-controller="Users" asp-action="Logout" method="post" class="navbar-form navbar-left">
+                                <button type="submit" class="btn btn-link navbar-link">Sair</button>
+                                @Html.AntiForgeryToken()
+                            </form>
+                        </li>
+                }
                 </ul>
             </div>
         </div>
@@ -77,4 +89,5 @@
 
     @RenderSection("Scripts", required: false)
 </body>
+
 </html>

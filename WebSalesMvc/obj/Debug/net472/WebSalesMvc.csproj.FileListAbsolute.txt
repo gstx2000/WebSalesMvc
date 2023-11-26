@@ -215,3 +215,8 @@ C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\D
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\WebSalesMvc.pdb
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Users\PasswordResetError.cshtml.g.cs
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Users\ResetPassword.cshtml.g.cs
+C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Products\Create.cshtml.g.cs
+C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Products\Delete.cshtml.g.cs
+C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Products\Details.cshtml.g.cs
+C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Products\Edit.cshtml.g.cs
+C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Products\Index.cshtml.g.cs

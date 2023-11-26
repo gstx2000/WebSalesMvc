@@ -11,20 +11,30 @@ using WebSalesMvc.Services.Exceptions;
 
 namespace WebSalesMvc.Controllers
 {
-    public class CategoriesController : Controller
+    public class ProductsController : Controller
     {
         private readonly WebSalesMvcContext _context;
         private readonly DepartmentService _departmentService;
         private readonly CategoryService _categoryService;
-        public CategoriesController(WebSalesMvcContext context, DepartmentService departmentService, CategoryService categoryService)
+        private readonly ProductService _productService;
+
+
+        public ProductsController(WebSalesMvcContext context, DepartmentService departmentService, CategoryService categoryService, ProductService productService)
         {
             _context = context;
             _departmentService = departmentService;
             _categoryService = categoryService;
+            _productService = productService;
         }
+
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
-            return View(await _categoryService.FindAllAsync());
+            var webSalesMvcContext = _context.Product
+                .Include(p => p.Department)
+                .Include(p => p.Category);
+
+            return View(await webSalesMvcContext.ToListAsync());
         }
         public async Task<IActionResult> Details(int? id)
         {
@@ -33,79 +43,104 @@ namespace WebSalesMvc.Controllers
                 return NotFound();
             }
 
-            var category = await _context.Category
+            var product = await _context.Product
+                .Include(p => p.Department)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (category == null)
+            if (product == null)
             {
                 return NotFound();
             }
 
-            return View(category);
+            return View(product);
         }
-
+        
         [HttpGet]
         public async Task<IActionResult> Create()
         {
-            var departments = await _departmentService.FindAllAsync();
-            var viewModel = new CategoryFormViewModel { Departments = departments, Category = new Category() };
+            var categories = await _categoryService.FindAllAsync();
+
+            var viewModel = new ProductFormViewModel {  Categories = categories };
             return View(viewModel);
+          
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Category category)
+        public async Task<IActionResult> Create(Product product)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                await _categoryService.InsertAsync(category);
-                return RedirectToAction(nameof(Index));
+                var categories = await _categoryService.FindAllAsync();
+                var viewModel = new ProductFormViewModel { Product = product, Categories = categories };
+                return View(viewModel);
             }
 
-            var departments = await _departmentService.FindAllAsync();
-            var viewModel = new CategoryFormViewModel { Category = category, Departments = departments };
-            return View(viewModel);
+            var category = await _categoryService.FindbyIdAsync(product.CategoryId);
+            if (category == null)
+            {
+                return RedirectToAction(nameof(Error), new { message = "Categoria inválida." });
+            }
+
+            product.Category = category;
+            product.Department = category?.Department;
+
+            await _productService.InsertAsync(product);
+
+            category.AddProduct(product);
+
+            return RedirectToAction(nameof(Index));
         }
 
         [HttpGet]
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(int? id, Product product)
         {
             if (id == null)
             {
                 return NotFound();
             }
-
-            var obj = await _categoryService.FindbyIdAsync(id.Value);
+            var obj = await _productService.FindByIdAsync(id.Value);
 
             if (obj == null)
             {
                 return RedirectToAction(nameof(Error), new { message = "Id não encontrado." });
             }
 
-            List<Department> departments = await _departmentService.FindAllAsync();
-            CategoryFormViewModel viewModel = new CategoryFormViewModel { Category = obj, Departments = departments };
+            List<Category> categories = await _categoryService.FindAllAsync();
+
+            var viewModel = new ProductFormViewModel
+            {
+                Product = obj,
+                Categories = categories
+            };
+
             return View(viewModel);
+
         }
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, Category category)
+        public async Task<IActionResult> Edit(int id, Product product)
         {
-            if (id != category.Id)
+            if (id != product.Id)
             {
                 return RedirectToAction(nameof(Error), new { message = "Id incompatível." });
             }
 
             if (!ModelState.IsValid)
             {
-                var departments = await _departmentService.FindAllAsync();
-                var viewModel = new CategoryFormViewModel { Category = category, Departments = departments };
+                var categories = await _categoryService.FindAllAsync();
+                var viewModel = new ProductFormViewModel { Product = product, Categories = categories };
                 return View(viewModel);
             }
-                try
-                {
-                    await _categoryService.UpdateAsync(category);
-                    return RedirectToAction(nameof(Index));
-                }
+            
+            try
+            {
+                Category category = await _categoryService.FindbyIdAsync(product.CategoryId);
+                product.Department = category?.Department;
+                await _productService.UpdateAsync(product);
+                return RedirectToAction(nameof(Index));
+            }
             catch (NotFoundException e)
             {
                 return RedirectToAction(nameof(Error), new { message = e.Message });
@@ -115,6 +150,7 @@ namespace WebSalesMvc.Controllers
                 return RedirectToAction(nameof(Error), new { message = e.Message });
             }
         }
+
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -122,29 +158,29 @@ namespace WebSalesMvc.Controllers
                 return NotFound();
             }
 
-            var category = await _context.Category
+            var product = await _context.Product
+                .Include(p => p.Department)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (category == null)
+            if (product == null)
             {
                 return NotFound();
             }
 
-            return View(category);
+            return View(product);
         }
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var category = await _categoryService.FindbyIdAsync(id);
-            await _categoryService.RemoveAsync(id);
+            var product = await _context.Product.FindAsync(id);
+            _context.Product.Remove(product);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
-        private bool CategoryExists(int id)
+        private bool ProductExists(int id)
         {
-            return _context.Category.Any(e => e.Id == id);
+            return _context.Product.Any(e => e.Id == id);
         }
 
         public IActionResult Error(string message)
@@ -155,8 +191,6 @@ namespace WebSalesMvc.Controllers
                 RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
             };
             return View(viewModel);
-
         }
     }
-
 }

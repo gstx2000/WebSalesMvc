@@ -23,6 +23,8 @@ namespace WebSalesMvc.Controllers
             var list = await _sellerService.FindAllAsync();
             return View(list);
         }
+        
+        [HttpGet]
         public async Task<IActionResult> Create()
         {
             var departments =  await _departmentService.FindAllAsync();
@@ -31,32 +33,32 @@ namespace WebSalesMvc.Controllers
             return View(viewModel);
         }
 
-[HttpPost]
-[ValidateAntiForgeryToken]
-public async Task<IActionResult> Create(Seller seller)
-{
-    if (!ModelState.IsValid)
-    {
-        var departments = await _departmentService.FindAllAsync();
-        var viewModel = new SellerFormViewModel { Seller = seller, Departments = departments };
-        return View(viewModel);
-    }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(Seller seller)
+        {
+            if (!ModelState.IsValid)
+            {
+                var departments = await _departmentService.FindAllAsync();
+                var viewModel = new SellerFormViewModel { Seller = seller, Departments = departments };
+                return View(viewModel);
+            }
 
-    var department = await _departmentService.FindByIdAsync(seller.DepartmentId);
+            var department = await _departmentService.FindByIdAsync(seller.DepartmentId);
 
-    if (department == null)
-    {
-        return RedirectToAction(nameof(Error), new { message = "Departmento inválido." });
-    }
+            if (department == null)
+            {
+                return RedirectToAction(nameof(Error), new { message = "Departmento inválido." });
+            }
 
-    seller.Department = department;
+            seller.Department = department;
 
-    await _sellerService.InsertAsync(seller);
+            await _sellerService.InsertAsync(seller);
 
-    department.AddSeller(seller);
+            department.AddSeller(seller);
 
-    return RedirectToAction(nameof(Index));
-}
+            return RedirectToAction(nameof(Index));
+        }
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

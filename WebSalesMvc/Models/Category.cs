@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using WebSalesMvc.Migrations;
 
 namespace WebSalesMvc.Models
 {
@@ -17,8 +19,15 @@ namespace WebSalesMvc.Models
         public Department Department { get; set; }
         public  int DepartmentId { get; set; }
 
+        [Display(Name = "Produto")]
+        public List<Product> Products { get; set; } = new List<Product>();
+
         public Category()
         {
+        }
+        public void AddProduct(Product product)
+        {
+            Products.Add(product);
         }
     }
 }

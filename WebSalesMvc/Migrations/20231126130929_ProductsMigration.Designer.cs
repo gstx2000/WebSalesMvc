@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebSalesMvc.Data;
 
 namespace WebSalesMvc.Migrations
 {
     [DbContext(typeof(WebSalesMvcContext))]
-    partial class WebSalesMvcContextModelSnapshot : ModelSnapshot
+    [Migration("20231126130929_ProductsMigration")]
+    partial class ProductsMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -54,7 +56,11 @@ namespace WebSalesMvc.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("CategoryId");
+                    b.Property<string>("Category")
+                        .IsRequired();
+
+                    b.Property<string>("CategoryId")
+                        .IsRequired();
 
                     b.Property<int>("DepartmentId");
 
@@ -66,8 +72,6 @@ namespace WebSalesMvc.Migrations
                         .IsRequired();
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CategoryId");
 
                     b.HasIndex("DepartmentId");
 
@@ -131,11 +135,6 @@ namespace WebSalesMvc.Migrations
 
             modelBuilder.Entity("WebSalesMvc.Models.Product", b =>
                 {
-                    b.HasOne("WebSalesMvc.Models.Category", "Category")
-                        .WithMany("Products")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
                     b.HasOne("WebSalesMvc.Models.Department", "Department")
                         .WithMany()
                         .HasForeignKey("DepartmentId")

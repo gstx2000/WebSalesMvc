@@ -121,6 +121,7 @@ namespace WebSalesMvc
             services.AddScoped<SalesRecordService>();
             services.AddScoped<CategoryService>();
             services.AddScoped<PasswordRecoveryService>();
+            services.AddScoped<ProductService>();
 
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseMySql(Configuration.GetConnectionString("WebSalesMvcContext"), builder =>

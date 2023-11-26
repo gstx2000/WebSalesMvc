@@ -1,7 +1,7 @@
-﻿@model IEnumerable<WebSalesMvc.Models.Category>
+﻿@model IEnumerable<WebSalesMvc.Models.Product>
 
 @{
-    ViewData["Title"] = "Categorias";
+    ViewData["Title"] = "Produtos";
 }
 
 <h2>@ViewData["Title"]</h2>
@@ -16,7 +16,13 @@
                 @Html.DisplayNameFor(model => model.Description)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Department)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageUrl)
             </th>
             <th></th>
         </tr>
@@ -30,18 +36,23 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
-                <td>
-                @Html.DisplayFor(modelItem => item.Department.Name)               
-                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Department.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageUrl)
+            </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+<a asp-action="Create" class="btn btn-default">Cadastrar</a>
 
-<p>
-    <a asp-action="Create" class="btn btn-default">Criar nova</a>
-</p>

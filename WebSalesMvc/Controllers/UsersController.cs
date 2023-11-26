@@ -6,7 +6,7 @@ using WebSalesMvc.Models;
 using SendGrid;
 using SendGrid.Helpers.Mail;
 using Newtonsoft.Json.Linq;
-
+using System.Text.Encodings.Web;
 
 [Authorize]
 public class UsersController : Controller
@@ -118,9 +118,10 @@ public class UsersController : Controller
             if (user != null)
             {
                 var token = await _userManager.GeneratePasswordResetTokenAsync(user);
-                var resetLink = Url.Action("ResetPassword", "Users", new { userId = user.Id, token = token }, Request.Scheme);
+                var resetLink = Url.Action("ResetPassword", "Users", new { email = user.Email, token = token }, Request.Scheme);
+                var encodedResetLink = HtmlEncoder.Default.Encode(resetLink);
 
-                await _passwordRecoveryService.SendEmailAsync(model.Email, "Recuperação de senha", $"Clique no link para redefinir sua senha: {resetLink}", "teste_app@gmail.com", "Equipe de suporte");
+                await _passwordRecoveryService.SendEmailAsync(model.Email, "Recuperação de senha", "Equipe de suporte", "gst203002@gmail.com", $"Clique no link para redefinir sua senha: {encodedResetLink}");
 
                 return RedirectToAction("PasswordRecoveryConfirmation");
             }
@@ -146,35 +147,59 @@ public class UsersController : Controller
         if (ModelState.IsValid)
         {
             var user = await _userManager.FindByEmailAsync(model.Email);
-            await _signInManager.SignInAsync(user, isPersistent: false);
-            return RedirectToAction("Index", "Home");
 
+            if (user == null)
+            {
+                return RedirectToAction("PasswordResetError");
+            }
+
+            var isTokenValid = await _userManager.VerifyUserTokenAsync(user, _userManager.Options.Tokens.PasswordResetTokenProvider, "ResetPassword", model.Token);
+
+            if (!isTokenValid)
+            {
+                return RedirectToAction("PasswordResetError");
+            }
+
+            var resetResult = await _userManager.ResetPasswordAsync(user, model.Token, model.NewPassword);
+
+            if (resetResult.Succeeded)
+            {
+                await _signInManager.SignInAsync(user, isPersistent: false);
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                foreach (var error in resetResult.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+
+                return View(model);
+            }
         }
-
-        ModelState.AddModelError(string.Empty, "Token inválido.");
 
         return View(model);
     }
 
+
     [HttpGet]
     [AllowAnonymous]
-    public async Task<IActionResult> ResetPassword(string userId, string token)
+    public async Task<IActionResult> ResetPassword(string email, string token)
     {
-        var user = await _userManager.FindByIdAsync(userId);
+        var user = await _userManager.FindByEmailAsync(email);
         var isTokenValid = await _userManager.VerifyUserTokenAsync(user, _userManager.Options.Tokens.PasswordResetTokenProvider, "ResetPassword", token);
 
-        if (string.IsNullOrEmpty(userId) || string.IsNullOrEmpty(token))
+        if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(token))
         {
-            return RedirectToAction("PasswordResetError");
+            return RedirectToAction("PasswordResetError", new { error = "Usuário ou token inválido." });
         }
 
         if (user == null)
-            return RedirectToAction("PasswordResetError");
+            return RedirectToAction("PasswordResetError", new { error = "Usuário não encontrado." });
 
         if (!isTokenValid)
         {
-            return RedirectToAction("PasswordResetError");
-
+            return RedirectToAction("PasswordResetError", new { error = "Token innválido." });
         }
 
         return View();

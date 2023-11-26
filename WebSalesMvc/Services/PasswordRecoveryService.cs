@@ -26,12 +26,8 @@ public class PasswordRecoveryService
 
             var from = new EmailAddress(fromEmail, fromName);
             var to = new EmailAddress(toEmail);
-            
-            var plainTextContent = "and easy to do anywhere, even with C#";
 
-            var htmlContent = "<strong>and easy to do anywhere, even with C#</strong>";
-
-            var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
+            var msg = MailHelper.CreateSingleEmail(from, to, subject, message, fromName);
 
             var response = await client.SendEmailAsync(msg);
 
@@ -39,7 +35,11 @@ public class PasswordRecoveryService
                                    response.StatusCode == System.Net.HttpStatusCode.Accepted))
             {
 
-                _logger.LogInformation("Email sent successfully", response, msg);
+                _logger.LogInformation("Email sent successfully");
+                _logger.LogInformation("message before logging: {message}", message);
+                _logger.LogDebug("Message before sending: {Message}", message);
+                _logger.LogInformation("Email being sent: {@Msg}", msg);
+
 
             }
             else

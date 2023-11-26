@@ -55,6 +55,9 @@
                             </td>
                             <td>
                                 @Html.DisplayFor(modelItem => item.Seller.Name)
+                                <a asp-action="Details"
+                                   asp-controller="Sellers"
+                                   asp-route-id="@item.Seller.Id">Detalhes</a>
                             </td>
                             <td>
                                 @Html.DisplayFor(modelItem => item.Status)

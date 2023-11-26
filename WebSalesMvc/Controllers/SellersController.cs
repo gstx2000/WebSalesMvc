@@ -7,8 +7,7 @@ using WebSalesMvc.Services;
 using WebSalesMvc.Services.Exceptions;
 
 namespace WebSalesMvc.Controllers
-{
-    public class SellersController : Controller
+{   public class SellersController : Controller
     {
         private readonly SellerService _sellerService;
         private readonly DepartmentService _departmentService;
@@ -24,7 +23,6 @@ namespace WebSalesMvc.Controllers
             var list = await _sellerService.FindAllAsync();
             return View(list);
         }
-
         public async Task<IActionResult> Create()
         {
             var departments =  await _departmentService.FindAllAsync();
@@ -55,15 +53,10 @@ public async Task<IActionResult> Create(Seller seller)
 
     await _sellerService.InsertAsync(seller);
 
-    // Update the department with the new seller
     department.AddSeller(seller);
 
     return RedirectToAction(nameof(Index));
 }
-
-
-
-
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -94,8 +87,6 @@ public async Task<IActionResult> Create(Seller seller)
                 return RedirectToAction(nameof(Error), new { message = "Não é possível deletar um vendendor que possui vendas." });
 
             }
-
-
         }
 
         public async Task<IActionResult> Details(int? id)
@@ -162,7 +153,6 @@ public async Task<IActionResult> Create(Seller seller)
                 return RedirectToAction(nameof(Error), new { message = e.Message });
             }
         }
-
         public IActionResult Error(string message)
         {
             var viewModel = new ErrorViewModel
@@ -171,7 +161,6 @@ public async Task<IActionResult> Create(Seller seller)
                 RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
             };
             return View(viewModel);
-
         }
     }
 }

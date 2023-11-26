@@ -3,9 +3,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using WebSalesMvc.Models;
-using SendGrid;
-using SendGrid.Helpers.Mail;
-using Newtonsoft.Json.Linq;
 using System.Text.Encodings.Web;
 
 [Authorize]

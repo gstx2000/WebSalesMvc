@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using WebSalesMvc.Data;
 using WebSalesMvc.Models;
@@ -102,12 +100,10 @@ namespace WebSalesMvc.Controllers
                 return NotFound();
             }
 
-            // You may need to load related data here if necessary (e.g., Sellers).
-
             var viewModel = new SalesRecordsCreateViewModel
             {
                 SalesRecord = salesRecord,
-                Sellers = await _sellerService.FindAllAsync() // Load Sellers or any related data.
+                Sellers = await _sellerService.FindAllAsync() 
             };
 
             return View(viewModel);

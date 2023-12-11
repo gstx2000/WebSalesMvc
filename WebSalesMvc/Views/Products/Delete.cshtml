@@ -6,9 +6,8 @@
 
 <h2>@ViewData["Title"]</h2>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Tem certeza que deseja deletar?</h3>
 <div>
-    <h4>Product</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -50,8 +49,9 @@
     </dl>
     
     <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-default" /> |
-        <a asp-action="Index">Back to List</a>
+        <div>
+            <input type="submit" value="Deletar" class="btn btn-default" />
+            <a class="btn btn-default" asp-action="Index">Cancelar</a>
+        </div>
     </form>
 </div>

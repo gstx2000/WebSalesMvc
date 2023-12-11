@@ -184,6 +184,11 @@ C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\D
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Home\Contact.cshtml.g.cs
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Products\Create.cshtml.g.cs
+C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Products\Delete.cshtml.g.cs
+C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Products\Details.cshtml.g.cs
+C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Products\Edit.cshtml.g.cs
+C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Products\Index.cshtml.g.cs
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\SalesRecords\Create.cshtml.g.cs
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\SalesRecords\Delete.cshtml.g.cs
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\SalesRecords\Details.cshtml.g.cs
@@ -204,7 +209,9 @@ C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\D
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Users\Login.cshtml.g.cs
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Users\PasswordRecovery.cshtml.g.cs
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Users\PasswordRecoveryConfirmation.cshtml.g.cs
+C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Users\PasswordResetError.cshtml.g.cs
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Users\Register.cshtml.g.cs
+C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Users\ResetPassword.cshtml.g.cs
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\WebSalesMvc.RazorTargetAssemblyInfo.cache
@@ -213,10 +220,3 @@ C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\D
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\WebSalesMvc.csproj.CopyComplete
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\WebSalesMvc.exe
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\WebSalesMvc.pdb
-C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Users\PasswordResetError.cshtml.g.cs
-C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Users\ResetPassword.cshtml.g.cs
-C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Products\Create.cshtml.g.cs
-C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Products\Delete.cshtml.g.cs
-C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Products\Details.cshtml.g.cs
-C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Products\Edit.cshtml.g.cs
-C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Products\Index.cshtml.g.cs

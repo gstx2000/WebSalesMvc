@@ -23,7 +23,7 @@ namespace WebSalesMvc.Controllers
             var list = await _sellerService.FindAllAsync();
             return View(list);
         }
-        
+
         [HttpGet]
         public async Task<IActionResult> Create()
         {

@@ -28,13 +28,11 @@ namespace WebSalesMvc.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index() 
         {
-            var webSalesMvcContext = _context.Product
-                .Include(p => p.Department)
-                .Include(p => p.Category);
+            var viewModel = await _productService.FindAllAsync();
 
-            return View(await webSalesMvcContext.ToListAsync());
+            return View(viewModel);
         }
         public async Task<IActionResult> Details(int? id)
         {
@@ -85,8 +83,6 @@ namespace WebSalesMvc.Controllers
             product.Department = category?.Department;
 
             await _productService.InsertAsync(product);
-
-            category.AddProduct(product);
 
             return RedirectToAction(nameof(Index));
         }

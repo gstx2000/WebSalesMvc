@@ -1,9 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using WebSalesMvc.Migrations;
 
 namespace WebSalesMvc.Models
 {
     public class Product
     {
+        [Key]
         public int Id { get; set; }
 
         [Required]
@@ -16,6 +18,9 @@ namespace WebSalesMvc.Models
         [Display(Name = "Categoria")]
         public Category Category { get; set; }
 
+        [Display(Name = "Preço")]
+        public double Price { get; set; }
+
         public int CategoryId { get; set; }
 
         [Display(Name = "Departamento")]
@@ -25,5 +30,8 @@ namespace WebSalesMvc.Models
       
         [Display(Name = "Imagem")]
         public string ImageUrl { get; set; }
+        
+
     }
+
 }

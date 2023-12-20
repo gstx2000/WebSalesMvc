@@ -1,0 +1,1348 @@
+2023-12-20 19:38:51.403 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:38:51.521 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:38:53.620 -03:00 [INF] Executed DbCommand (107ms) [Parameters=[@__get_Item_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`AccessFailedCount`, `e`.`ConcurrencyStamp`, `e`.`Email`, `e`.`EmailConfirmed`, `e`.`LockoutEnabled`, `e`.`LockoutEnd`, `e`.`NormalizedEmail`, `e`.`NormalizedUserName`, `e`.`PasswordHash`, `e`.`PhoneNumber`, `e`.`PhoneNumberConfirmed`, `e`.`SecurityStamp`, `e`.`TwoFactorEnabled`, `e`.`UserName`
+FROM `AspNetUsers` AS `e`
+WHERE `e`.`Id` = @__get_Item_0
+LIMIT 1
+2023-12-20 19:38:53.636 -03:00 [INF] Executed DbCommand (107ms) [Parameters=[@__get_Item_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`AccessFailedCount`, `e`.`ConcurrencyStamp`, `e`.`Email`, `e`.`EmailConfirmed`, `e`.`LockoutEnabled`, `e`.`LockoutEnd`, `e`.`NormalizedEmail`, `e`.`NormalizedUserName`, `e`.`PasswordHash`, `e`.`PhoneNumber`, `e`.`PhoneNumberConfirmed`, `e`.`SecurityStamp`, `e`.`TwoFactorEnabled`, `e`.`UserName`
+FROM `AspNetUsers` AS `e`
+WHERE `e`.`Id` = @__get_Item_0
+LIMIT 1
+2023-12-20 19:38:53.838 -03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-12-20 19:38:53.838 -03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-12-20 19:38:53.843 -03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2023-12-20 19:38:53.845 -03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2023-12-20 19:38:53.849 -03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-12-20 19:38:53.849 -03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-12-20 19:38:53.859 -03:00 [INF] Identity.Application was not authenticated. Failure message: No principal.
+2023-12-20 19:38:53.859 -03:00 [INF] Identity.Application was not authenticated. Failure message: No principal.
+2023-12-20 19:38:55.674 -03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing action UsersController.Login (WebSalesMvc)
+2023-12-20 19:38:55.675 -03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing action UsersController.Login (WebSalesMvc)
+2023-12-20 19:38:55.767 -03:00 [INF] Executing action method UsersController.Login (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:38:55.769 -03:00 [INF] Executing action method UsersController.Login (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:38:55.788 -03:00 [INF] Executed action method UsersController.Login (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7.7005000000000008ms.
+2023-12-20 19:38:55.789 -03:00 [INF] Executed action method UsersController.Login (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7.7005000000000008ms.
+2023-12-20 19:39:09.587 -03:00 [INF] Executing ViewResult, running view Login.
+2023-12-20 19:39:09.588 -03:00 [INF] Executing ViewResult, running view Login.
+2023-12-20 19:39:11.387 -03:00 [INF] Executed ViewResult - view Login executed in 15552.8536ms.
+2023-12-20 19:39:11.387 -03:00 [INF] Executed ViewResult - view Login executed in 15552.8536ms.
+2023-12-20 19:39:11.393 -03:00 [INF] Executed action UsersController.Login (WebSalesMvc) in 15711.1504ms
+2023-12-20 19:39:11.394 -03:00 [INF] Executed action UsersController.Login (WebSalesMvc) in 15711.1504ms
+2023-12-20 19:39:26.297 -03:00 [INF] Route matched with {action = "Register", controller = "Users"}. Executing action UsersController.Register (WebSalesMvc)
+2023-12-20 19:39:26.297 -03:00 [INF] Route matched with {action = "Register", controller = "Users"}. Executing action UsersController.Register (WebSalesMvc)
+2023-12-20 19:39:26.301 -03:00 [INF] Executing action method UsersController.Register (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:39:26.301 -03:00 [INF] Executing action method UsersController.Register (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:39:26.303 -03:00 [INF] Executed action method UsersController.Register (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6151ms.
+2023-12-20 19:39:26.303 -03:00 [INF] Executed action method UsersController.Register (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.6151ms.
+2023-12-20 19:39:26.643 -03:00 [INF] Executing ViewResult, running view Register.
+2023-12-20 19:39:26.643 -03:00 [INF] Executing ViewResult, running view Register.
+2023-12-20 19:39:26.687 -03:00 [INF] Executed ViewResult - view Register executed in 383.77880000000005ms.
+2023-12-20 19:39:26.687 -03:00 [INF] Executed ViewResult - view Register executed in 383.77880000000005ms.
+2023-12-20 19:39:26.687 -03:00 [INF] Executed action UsersController.Register (WebSalesMvc) in 389.0312ms
+2023-12-20 19:39:26.687 -03:00 [INF] Executed action UsersController.Register (WebSalesMvc) in 389.0312ms
+2023-12-20 19:39:33.174 -03:00 [INF] Route matched with {action = "Register", controller = "Users"}. Executing action UsersController.Register (WebSalesMvc)
+2023-12-20 19:39:33.176 -03:00 [INF] Route matched with {action = "Register", controller = "Users"}. Executing action UsersController.Register (WebSalesMvc)
+2023-12-20 19:39:33.416 -03:00 [INF] Executing action method UsersController.Register (WebSalesMvc) with arguments (["RegisterViewModel"]) - Validation state: "Valid"
+2023-12-20 19:39:33.425 -03:00 [INF] Executing action method UsersController.Register (WebSalesMvc) with arguments (["RegisterViewModel"]) - Validation state: "Valid"
+2023-12-20 19:39:33.539 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:39:33.539 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:39:33.615 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`AccessFailedCount`, `u`.`ConcurrencyStamp`, `u`.`Email`, `u`.`EmailConfirmed`, `u`.`LockoutEnabled`, `u`.`LockoutEnd`, `u`.`NormalizedEmail`, `u`.`NormalizedUserName`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`PhoneNumberConfirmed`, `u`.`SecurityStamp`, `u`.`TwoFactorEnabled`, `u`.`UserName`
+FROM `AspNetUsers` AS `u`
+WHERE `u`.`NormalizedUserName` = @__normalizedUserName_0
+LIMIT 1
+2023-12-20 19:39:33.615 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`AccessFailedCount`, `u`.`ConcurrencyStamp`, `u`.`Email`, `u`.`EmailConfirmed`, `u`.`LockoutEnabled`, `u`.`LockoutEnd`, `u`.`NormalizedEmail`, `u`.`NormalizedUserName`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`PhoneNumberConfirmed`, `u`.`SecurityStamp`, `u`.`TwoFactorEnabled`, `u`.`UserName`
+FROM `AspNetUsers` AS `u`
+WHERE `u`.`NormalizedUserName` = @__normalizedUserName_0
+LIMIT 1
+2023-12-20 19:39:33.664 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`AccessFailedCount`, `u`.`ConcurrencyStamp`, `u`.`Email`, `u`.`EmailConfirmed`, `u`.`LockoutEnabled`, `u`.`LockoutEnd`, `u`.`NormalizedEmail`, `u`.`NormalizedUserName`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`PhoneNumberConfirmed`, `u`.`SecurityStamp`, `u`.`TwoFactorEnabled`, `u`.`UserName`
+FROM `AspNetUsers` AS `u`
+WHERE `u`.`NormalizedEmail` = @__normalizedEmail_0
+LIMIT 1
+2023-12-20 19:39:33.665 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`AccessFailedCount`, `u`.`ConcurrencyStamp`, `u`.`Email`, `u`.`EmailConfirmed`, `u`.`LockoutEnabled`, `u`.`LockoutEnd`, `u`.`NormalizedEmail`, `u`.`NormalizedUserName`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`PhoneNumberConfirmed`, `u`.`SecurityStamp`, `u`.`TwoFactorEnabled`, `u`.`UserName`
+FROM `AspNetUsers` AS `u`
+WHERE `u`.`NormalizedEmail` = @__normalizedEmail_0
+LIMIT 1
+2023-12-20 19:39:34.062 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `AspNetUsers` (`Id`, `AccessFailedCount`, `ConcurrencyStamp`, `Email`, `EmailConfirmed`, `LockoutEnabled`, `LockoutEnd`, `NormalizedEmail`, `NormalizedUserName`, `PasswordHash`, `PhoneNumber`, `PhoneNumberConfirmed`, `SecurityStamp`, `TwoFactorEnabled`, `UserName`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2023-12-20 19:39:34.062 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `AspNetUsers` (`Id`, `AccessFailedCount`, `ConcurrencyStamp`, `Email`, `EmailConfirmed`, `LockoutEnabled`, `LockoutEnd`, `NormalizedEmail`, `NormalizedUserName`, `PasswordHash`, `PhoneNumber`, `PhoneNumberConfirmed`, `SecurityStamp`, `TwoFactorEnabled`, `UserName`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2023-12-20 19:39:34.290 -03:00 [INF] Executed DbCommand (18ms) [Parameters=[@__user_Id_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `uc`.`Id`, `uc`.`ClaimType`, `uc`.`ClaimValue`, `uc`.`UserId`
+FROM `AspNetUserClaims` AS `uc`
+WHERE `uc`.`UserId` = @__user_Id_0
+2023-12-20 19:39:34.291 -03:00 [INF] Executed DbCommand (18ms) [Parameters=[@__user_Id_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `uc`.`Id`, `uc`.`ClaimType`, `uc`.`ClaimValue`, `uc`.`UserId`
+FROM `AspNetUserClaims` AS `uc`
+WHERE `uc`.`UserId` = @__user_Id_0
+2023-12-20 19:39:34.381 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `role`.`Name`
+FROM `AspNetUserRoles` AS `userRole`
+INNER JOIN `AspNetRoles` AS `role` ON `userRole`.`RoleId` = `role`.`Id`
+WHERE `userRole`.`UserId` = @__userId_0
+2023-12-20 19:39:34.381 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `role`.`Name`
+FROM `AspNetUserRoles` AS `userRole`
+INNER JOIN `AspNetRoles` AS `role` ON `userRole`.`RoleId` = `role`.`Id`
+WHERE `userRole`.`UserId` = @__userId_0
+2023-12-20 19:39:34.407 -03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-12-20 19:39:34.408 -03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-12-20 19:39:34.409 -03:00 [INF] Executed action method UsersController.Register (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 983.731ms.
+2023-12-20 19:39:34.410 -03:00 [INF] Executed action method UsersController.Register (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 983.731ms.
+2023-12-20 19:39:34.413 -03:00 [INF] Executing RedirectResult, redirecting to /Home/Index.
+2023-12-20 19:39:34.413 -03:00 [INF] Executing RedirectResult, redirecting to /Home/Index.
+2023-12-20 19:39:34.419 -03:00 [INF] Executed action UsersController.Register (WebSalesMvc) in 1242.1407000000002ms
+2023-12-20 19:39:34.420 -03:00 [INF] Executed action UsersController.Register (WebSalesMvc) in 1242.1407000000002ms
+2023-12-20 19:39:34.443 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing action WebSalesMvc.Controllers.HomeController.Index (WebSalesMvc)
+2023-12-20 19:39:34.444 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing action WebSalesMvc.Controllers.HomeController.Index (WebSalesMvc)
+2023-12-20 19:39:34.464 -03:00 [INF] Authorization was successful.
+2023-12-20 19:39:34.464 -03:00 [INF] Authorization was successful.
+2023-12-20 19:39:34.464 -03:00 [INF] Executing action method WebSalesMvc.Controllers.HomeController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:39:34.465 -03:00 [INF] Executing action method WebSalesMvc.Controllers.HomeController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:39:34.466 -03:00 [INF] Executed action method WebSalesMvc.Controllers.HomeController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.52970000000000006ms.
+2023-12-20 19:39:34.466 -03:00 [INF] Executed action method WebSalesMvc.Controllers.HomeController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.52970000000000006ms.
+2023-12-20 19:39:34.640 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:39:34.641 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:39:34.669 -03:00 [INF] Executed ViewResult - view Index executed in 201.8023ms.
+2023-12-20 19:39:34.670 -03:00 [INF] Executed ViewResult - view Index executed in 201.8023ms.
+2023-12-20 19:39:34.671 -03:00 [INF] Executed action WebSalesMvc.Controllers.HomeController.Index (WebSalesMvc) in 226.91910000000001ms
+2023-12-20 19:39:34.672 -03:00 [INF] Executed action WebSalesMvc.Controllers.HomeController.Index (WebSalesMvc) in 226.91910000000001ms
+2023-12-20 19:39:55.948 -03:00 [INF] Route matched with {action = "Index", controller = "Departments"}. Executing action WebSalesMvc.Controllers.DepartmentsController.Index (WebSalesMvc)
+2023-12-20 19:39:55.951 -03:00 [INF] Route matched with {action = "Index", controller = "Departments"}. Executing action WebSalesMvc.Controllers.DepartmentsController.Index (WebSalesMvc)
+2023-12-20 19:39:55.952 -03:00 [INF] Authorization was successful.
+2023-12-20 19:39:55.952 -03:00 [INF] Authorization was successful.
+2023-12-20 19:39:55.960 -03:00 [INF] Executing action method WebSalesMvc.Controllers.DepartmentsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:39:55.961 -03:00 [INF] Executing action method WebSalesMvc.Controllers.DepartmentsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:39:56.141 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:39:56.142 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:39:56.370 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Name`
+FROM `Department` AS `d`
+ORDER BY `d`.`Id`
+2023-12-20 19:39:56.370 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Name`
+FROM `Department` AS `d`
+ORDER BY `d`.`Id`
+2023-12-20 19:39:56.372 -03:00 [INF] Executed action method WebSalesMvc.Controllers.DepartmentsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 411.8759ms.
+2023-12-20 19:39:56.373 -03:00 [INF] Executed action method WebSalesMvc.Controllers.DepartmentsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 411.8759ms.
+2023-12-20 19:39:56.879 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:39:56.881 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:39:56.914 -03:00 [INF] Executed ViewResult - view Index executed in 541.11880000000008ms.
+2023-12-20 19:39:56.914 -03:00 [INF] Executed ViewResult - view Index executed in 541.11880000000008ms.
+2023-12-20 19:39:56.914 -03:00 [INF] Executed action WebSalesMvc.Controllers.DepartmentsController.Index (WebSalesMvc) in 963.6581ms
+2023-12-20 19:39:56.915 -03:00 [INF] Executed action WebSalesMvc.Controllers.DepartmentsController.Index (WebSalesMvc) in 963.6581ms
+2023-12-20 19:40:55.955 -03:00 [INF] Route matched with {action = "Create", controller = "Departments"}. Executing action WebSalesMvc.Controllers.DepartmentsController.Create (WebSalesMvc)
+2023-12-20 19:40:55.956 -03:00 [INF] Route matched with {action = "Create", controller = "Departments"}. Executing action WebSalesMvc.Controllers.DepartmentsController.Create (WebSalesMvc)
+2023-12-20 19:40:55.956 -03:00 [INF] Authorization was successful.
+2023-12-20 19:40:55.956 -03:00 [INF] Authorization was successful.
+2023-12-20 19:40:55.956 -03:00 [INF] Executing action method WebSalesMvc.Controllers.DepartmentsController.Create (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:40:55.956 -03:00 [INF] Executing action method WebSalesMvc.Controllers.DepartmentsController.Create (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:40:55.957 -03:00 [INF] Executed action method WebSalesMvc.Controllers.DepartmentsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2262ms.
+2023-12-20 19:40:55.957 -03:00 [INF] Executed action method WebSalesMvc.Controllers.DepartmentsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2262ms.
+2023-12-20 19:40:56.218 -03:00 [INF] Executing ViewResult, running view Create.
+2023-12-20 19:40:56.222 -03:00 [INF] Executing ViewResult, running view Create.
+2023-12-20 19:40:56.510 -03:00 [INF] Executed ViewResult - view Create executed in 551.09440000000006ms.
+2023-12-20 19:40:56.510 -03:00 [INF] Executed ViewResult - view Create executed in 551.09440000000006ms.
+2023-12-20 19:40:56.511 -03:00 [INF] Executed action WebSalesMvc.Controllers.DepartmentsController.Create (WebSalesMvc) in 554.3418ms
+2023-12-20 19:40:56.511 -03:00 [INF] Executed action WebSalesMvc.Controllers.DepartmentsController.Create (WebSalesMvc) in 554.3418ms
+2023-12-20 19:40:59.028 -03:00 [INF] Route matched with {action = "Create", controller = "Departments"}. Executing action WebSalesMvc.Controllers.DepartmentsController.Create (WebSalesMvc)
+2023-12-20 19:40:59.028 -03:00 [INF] Route matched with {action = "Create", controller = "Departments"}. Executing action WebSalesMvc.Controllers.DepartmentsController.Create (WebSalesMvc)
+2023-12-20 19:40:59.028 -03:00 [INF] Authorization was successful.
+2023-12-20 19:40:59.028 -03:00 [INF] Authorization was successful.
+2023-12-20 19:40:59.043 -03:00 [INF] Executing action method WebSalesMvc.Controllers.DepartmentsController.Create (WebSalesMvc) with arguments (["WebSalesMvc.Models.Department"]) - Validation state: "Valid"
+2023-12-20 19:40:59.045 -03:00 [INF] Executing action method WebSalesMvc.Controllers.DepartmentsController.Create (WebSalesMvc) with arguments (["WebSalesMvc.Models.Department"]) - Validation state: "Valid"
+2023-12-20 19:40:59.047 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:40:59.048 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:40:59.127 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Department` (`Name`)
+VALUES (@p0);
+SELECT `Id`
+FROM `Department`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-12-20 19:40:59.127 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Department` (`Name`)
+VALUES (@p0);
+SELECT `Id`
+FROM `Department`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-12-20 19:40:59.181 -03:00 [INF] Executed action method WebSalesMvc.Controllers.DepartmentsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 135.4379ms.
+2023-12-20 19:40:59.181 -03:00 [INF] Executed action method WebSalesMvc.Controllers.DepartmentsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 135.4379ms.
+2023-12-20 19:40:59.181 -03:00 [INF] Executing RedirectResult, redirecting to /Departments/Index.
+2023-12-20 19:40:59.181 -03:00 [INF] Executing RedirectResult, redirecting to /Departments/Index.
+2023-12-20 19:40:59.181 -03:00 [INF] Executed action WebSalesMvc.Controllers.DepartmentsController.Create (WebSalesMvc) in 153.3562ms
+2023-12-20 19:40:59.181 -03:00 [INF] Executed action WebSalesMvc.Controllers.DepartmentsController.Create (WebSalesMvc) in 153.3562ms
+2023-12-20 19:40:59.205 -03:00 [INF] Route matched with {action = "Index", controller = "Departments"}. Executing action WebSalesMvc.Controllers.DepartmentsController.Index (WebSalesMvc)
+2023-12-20 19:40:59.207 -03:00 [INF] Route matched with {action = "Index", controller = "Departments"}. Executing action WebSalesMvc.Controllers.DepartmentsController.Index (WebSalesMvc)
+2023-12-20 19:40:59.207 -03:00 [INF] Authorization was successful.
+2023-12-20 19:40:59.207 -03:00 [INF] Authorization was successful.
+2023-12-20 19:40:59.208 -03:00 [INF] Executing action method WebSalesMvc.Controllers.DepartmentsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:40:59.208 -03:00 [INF] Executing action method WebSalesMvc.Controllers.DepartmentsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:40:59.209 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:40:59.209 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:40:59.222 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Name`
+FROM `Department` AS `d`
+ORDER BY `d`.`Id`
+2023-12-20 19:40:59.223 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d`.`Id`, `d`.`Name`
+FROM `Department` AS `d`
+ORDER BY `d`.`Id`
+2023-12-20 19:40:59.288 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d.Sellers`.`Id`, `d.Sellers`.`BaseSalary`, `d.Sellers`.`Birthdate`, `d.Sellers`.`DepartmentId`, `d.Sellers`.`Email`, `d.Sellers`.`Name`, `d.Sellers`.`Phone`
+FROM `Seller` AS `d.Sellers`
+INNER JOIN (
+    SELECT `d0`.`Id`
+    FROM `Department` AS `d0`
+) AS `t` ON `d.Sellers`.`DepartmentId` = `t`.`Id`
+ORDER BY `t`.`Id`
+2023-12-20 19:40:59.289 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `d.Sellers`.`Id`, `d.Sellers`.`BaseSalary`, `d.Sellers`.`Birthdate`, `d.Sellers`.`DepartmentId`, `d.Sellers`.`Email`, `d.Sellers`.`Name`, `d.Sellers`.`Phone`
+FROM `Seller` AS `d.Sellers`
+INNER JOIN (
+    SELECT `d0`.`Id`
+    FROM `Department` AS `d0`
+) AS `t` ON `d.Sellers`.`DepartmentId` = `t`.`Id`
+ORDER BY `t`.`Id`
+2023-12-20 19:40:59.304 -03:00 [INF] Executed action method WebSalesMvc.Controllers.DepartmentsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 95.4439ms.
+2023-12-20 19:40:59.305 -03:00 [INF] Executed action method WebSalesMvc.Controllers.DepartmentsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 95.4439ms.
+2023-12-20 19:40:59.305 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:40:59.305 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:40:59.347 -03:00 [INF] Executed ViewResult - view Index executed in 42.0358ms.
+2023-12-20 19:40:59.347 -03:00 [INF] Executed ViewResult - view Index executed in 42.0358ms.
+2023-12-20 19:40:59.348 -03:00 [INF] Executed action WebSalesMvc.Controllers.DepartmentsController.Index (WebSalesMvc) in 140.6834ms
+2023-12-20 19:40:59.348 -03:00 [INF] Executed action WebSalesMvc.Controllers.DepartmentsController.Index (WebSalesMvc) in 140.6834ms
+2023-12-20 19:41:00.993 -03:00 [INF] Route matched with {action = "Index", controller = "Sellers"}. Executing action WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc)
+2023-12-20 19:41:00.994 -03:00 [INF] Route matched with {action = "Index", controller = "Sellers"}. Executing action WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc)
+2023-12-20 19:41:00.994 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:00.994 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:00.995 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:00.995 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:01.001 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:01.002 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:01.077 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:41:01.077 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:41:01.083 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 87.3625ms.
+2023-12-20 19:41:01.083 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 87.3625ms.
+2023-12-20 19:41:01.381 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:41:01.383 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:41:01.412 -03:00 [INF] Executed ViewResult - view Index executed in 328.3111ms.
+2023-12-20 19:41:01.413 -03:00 [INF] Executed ViewResult - view Index executed in 328.3111ms.
+2023-12-20 19:41:01.413 -03:00 [INF] Executed action WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc) in 418.4364ms
+2023-12-20 19:41:01.413 -03:00 [INF] Executed action WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc) in 418.4364ms
+2023-12-20 19:41:02.427 -03:00 [INF] Route matched with {action = "Create", controller = "Sellers"}. Executing action WebSalesMvc.Controllers.SellersController.Create (WebSalesMvc)
+2023-12-20 19:41:02.427 -03:00 [INF] Route matched with {action = "Create", controller = "Sellers"}. Executing action WebSalesMvc.Controllers.SellersController.Create (WebSalesMvc)
+2023-12-20 19:41:02.427 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:02.427 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:02.427 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SellersController.Create (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:02.428 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SellersController.Create (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:02.433 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:02.433 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:02.447 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Name`
+FROM `Department` AS `x`
+ORDER BY `x`.`Name`
+2023-12-20 19:41:02.449 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Name`
+FROM `Department` AS `x`
+ORDER BY `x`.`Name`
+2023-12-20 19:41:02.459 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SellersController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 31.3934ms.
+2023-12-20 19:41:02.460 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SellersController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 31.3934ms.
+2023-12-20 19:41:02.813 -03:00 [INF] Executing ViewResult, running view Create.
+2023-12-20 19:41:02.814 -03:00 [INF] Executing ViewResult, running view Create.
+2023-12-20 19:41:02.948 -03:00 [INF] Executed ViewResult - view Create executed in 487.0978ms.
+2023-12-20 19:41:02.948 -03:00 [INF] Executed ViewResult - view Create executed in 487.0978ms.
+2023-12-20 19:41:02.948 -03:00 [INF] Executed action WebSalesMvc.Controllers.SellersController.Create (WebSalesMvc) in 520.6146ms
+2023-12-20 19:41:02.948 -03:00 [INF] Executed action WebSalesMvc.Controllers.SellersController.Create (WebSalesMvc) in 520.6146ms
+2023-12-20 19:41:08.772 -03:00 [INF] Route matched with {action = "Create", controller = "Sellers"}. Executing action WebSalesMvc.Controllers.SellersController.Create (WebSalesMvc)
+2023-12-20 19:41:08.773 -03:00 [INF] Route matched with {action = "Create", controller = "Sellers"}. Executing action WebSalesMvc.Controllers.SellersController.Create (WebSalesMvc)
+2023-12-20 19:41:08.773 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:08.773 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:08.793 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SellersController.Create (WebSalesMvc) with arguments (["WebSalesMvc.Models.Seller"]) - Validation state: "Valid"
+2023-12-20 19:41:08.793 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SellersController.Create (WebSalesMvc) with arguments (["WebSalesMvc.Models.Seller"]) - Validation state: "Valid"
+2023-12-20 19:41:08.798 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:08.798 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:08.813 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Name`
+FROM `Department` AS `e`
+WHERE `e`.`Id` = @__get_Item_0
+LIMIT 1
+2023-12-20 19:41:08.813 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Name`
+FROM `Department` AS `e`
+WHERE `e`.`Id` = @__get_Item_0
+LIMIT 1
+2023-12-20 19:41:08.899 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32), @p3='?' (Size = 50), @p4='?' (Size = 4000), @p5='?' (Size = 11)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Seller` (`BaseSalary`, `Birthdate`, `DepartmentId`, `Email`, `Name`, `Phone`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT `Id`
+FROM `Seller`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-12-20 19:41:08.899 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32), @p3='?' (Size = 50), @p4='?' (Size = 4000), @p5='?' (Size = 11)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Seller` (`BaseSalary`, `Birthdate`, `DepartmentId`, `Email`, `Name`, `Phone`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT `Id`
+FROM `Seller`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-12-20 19:41:08.913 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SellersController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 119.3318ms.
+2023-12-20 19:41:08.914 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SellersController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 119.3318ms.
+2023-12-20 19:41:08.914 -03:00 [INF] Executing RedirectResult, redirecting to /Sellers/Index.
+2023-12-20 19:41:08.914 -03:00 [INF] Executing RedirectResult, redirecting to /Sellers/Index.
+2023-12-20 19:41:08.914 -03:00 [INF] Executed action WebSalesMvc.Controllers.SellersController.Create (WebSalesMvc) in 140.3606ms
+2023-12-20 19:41:08.914 -03:00 [INF] Executed action WebSalesMvc.Controllers.SellersController.Create (WebSalesMvc) in 140.3606ms
+2023-12-20 19:41:08.925 -03:00 [INF] Route matched with {action = "Index", controller = "Sellers"}. Executing action WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc)
+2023-12-20 19:41:08.925 -03:00 [INF] Route matched with {action = "Index", controller = "Sellers"}. Executing action WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc)
+2023-12-20 19:41:08.926 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:08.926 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:08.926 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:08.926 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:08.927 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:08.927 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:08.929 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:41:08.929 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:41:08.953 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 26.4864ms.
+2023-12-20 19:41:08.954 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 26.4864ms.
+2023-12-20 19:41:08.955 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:41:08.955 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:41:08.977 -03:00 [INF] Executed ViewResult - view Index executed in 22.4388ms.
+2023-12-20 19:41:08.977 -03:00 [INF] Executed ViewResult - view Index executed in 22.4388ms.
+2023-12-20 19:41:08.977 -03:00 [INF] Executed action WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc) in 51.8401ms
+2023-12-20 19:41:08.978 -03:00 [INF] Executed action WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc) in 51.8401ms
+2023-12-20 19:41:11.176 -03:00 [INF] Route matched with {action = "Index", controller = "Categories"}. Executing action WebSalesMvc.Controllers.CategoriesController.Index (WebSalesMvc)
+2023-12-20 19:41:11.177 -03:00 [INF] Route matched with {action = "Index", controller = "Categories"}. Executing action WebSalesMvc.Controllers.CategoriesController.Index (WebSalesMvc)
+2023-12-20 19:41:11.177 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:11.178 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:11.179 -03:00 [INF] Executing action method WebSalesMvc.Controllers.CategoriesController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:11.179 -03:00 [INF] Executing action method WebSalesMvc.Controllers.CategoriesController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:11.183 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:11.183 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:11.211 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`DepartmentId`, `s`.`Description`, `s`.`Name`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Category` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:41:11.212 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`DepartmentId`, `s`.`Description`, `s`.`Name`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Category` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:41:11.214 -03:00 [INF] Executed action method WebSalesMvc.Controllers.CategoriesController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 33.975ms.
+2023-12-20 19:41:11.214 -03:00 [INF] Executed action method WebSalesMvc.Controllers.CategoriesController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 33.975ms.
+2023-12-20 19:41:11.413 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:41:11.414 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:41:11.432 -03:00 [INF] Executed ViewResult - view Index executed in 216.69060000000002ms.
+2023-12-20 19:41:11.432 -03:00 [INF] Executed ViewResult - view Index executed in 216.69060000000002ms.
+2023-12-20 19:41:11.433 -03:00 [INF] Executed action WebSalesMvc.Controllers.CategoriesController.Index (WebSalesMvc) in 255.04680000000002ms
+2023-12-20 19:41:11.433 -03:00 [INF] Executed action WebSalesMvc.Controllers.CategoriesController.Index (WebSalesMvc) in 255.04680000000002ms
+2023-12-20 19:41:12.185 -03:00 [INF] Route matched with {action = "Create", controller = "Categories"}. Executing action WebSalesMvc.Controllers.CategoriesController.Create (WebSalesMvc)
+2023-12-20 19:41:12.185 -03:00 [INF] Route matched with {action = "Create", controller = "Categories"}. Executing action WebSalesMvc.Controllers.CategoriesController.Create (WebSalesMvc)
+2023-12-20 19:41:12.185 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:12.185 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:12.186 -03:00 [INF] Executing action method WebSalesMvc.Controllers.CategoriesController.Create (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:12.186 -03:00 [INF] Executing action method WebSalesMvc.Controllers.CategoriesController.Create (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:12.190 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:12.190 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:12.193 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Name`
+FROM `Department` AS `x`
+ORDER BY `x`.`Name`
+2023-12-20 19:41:12.193 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Name`
+FROM `Department` AS `x`
+ORDER BY `x`.`Name`
+2023-12-20 19:41:12.195 -03:00 [INF] Executed action method WebSalesMvc.Controllers.CategoriesController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.055200000000001ms.
+2023-12-20 19:41:12.195 -03:00 [INF] Executed action method WebSalesMvc.Controllers.CategoriesController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.055200000000001ms.
+2023-12-20 19:41:12.489 -03:00 [INF] Executing ViewResult, running view Create.
+2023-12-20 19:41:12.491 -03:00 [INF] Executing ViewResult, running view Create.
+2023-12-20 19:41:12.523 -03:00 [INF] Executed ViewResult - view Create executed in 328.5759ms.
+2023-12-20 19:41:12.524 -03:00 [INF] Executed ViewResult - view Create executed in 328.5759ms.
+2023-12-20 19:41:12.524 -03:00 [INF] Executed action WebSalesMvc.Controllers.CategoriesController.Create (WebSalesMvc) in 338.7635ms
+2023-12-20 19:41:12.524 -03:00 [INF] Executed action WebSalesMvc.Controllers.CategoriesController.Create (WebSalesMvc) in 338.7635ms
+2023-12-20 19:41:22.711 -03:00 [INF] Route matched with {action = "Create", controller = "Categories"}. Executing action WebSalesMvc.Controllers.CategoriesController.Create (WebSalesMvc)
+2023-12-20 19:41:22.711 -03:00 [INF] Route matched with {action = "Create", controller = "Categories"}. Executing action WebSalesMvc.Controllers.CategoriesController.Create (WebSalesMvc)
+2023-12-20 19:41:22.712 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:22.712 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:22.715 -03:00 [INF] Executing action method WebSalesMvc.Controllers.CategoriesController.Create (WebSalesMvc) with arguments (["WebSalesMvc.Models.Category"]) - Validation state: "Valid"
+2023-12-20 19:41:22.716 -03:00 [INF] Executing action method WebSalesMvc.Controllers.CategoriesController.Create (WebSalesMvc) with arguments (["WebSalesMvc.Models.Category"]) - Validation state: "Valid"
+2023-12-20 19:41:22.719 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:22.720 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:22.746 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Category` (`DepartmentId`, `Description`, `Name`)
+VALUES (@p0, @p1, @p2);
+SELECT `Id`
+FROM `Category`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-12-20 19:41:22.746 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Category` (`DepartmentId`, `Description`, `Name`)
+VALUES (@p0, @p1, @p2);
+SELECT `Id`
+FROM `Category`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-12-20 19:41:22.751 -03:00 [INF] Executed action method WebSalesMvc.Controllers.CategoriesController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 34.8132ms.
+2023-12-20 19:41:22.751 -03:00 [INF] Executed action method WebSalesMvc.Controllers.CategoriesController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 34.8132ms.
+2023-12-20 19:41:22.752 -03:00 [INF] Executing RedirectResult, redirecting to /Categories/Index.
+2023-12-20 19:41:22.752 -03:00 [INF] Executing RedirectResult, redirecting to /Categories/Index.
+2023-12-20 19:41:22.752 -03:00 [INF] Executed action WebSalesMvc.Controllers.CategoriesController.Create (WebSalesMvc) in 40.2192ms
+2023-12-20 19:41:22.752 -03:00 [INF] Executed action WebSalesMvc.Controllers.CategoriesController.Create (WebSalesMvc) in 40.2192ms
+2023-12-20 19:41:22.764 -03:00 [INF] Route matched with {action = "Index", controller = "Categories"}. Executing action WebSalesMvc.Controllers.CategoriesController.Index (WebSalesMvc)
+2023-12-20 19:41:22.764 -03:00 [INF] Route matched with {action = "Index", controller = "Categories"}. Executing action WebSalesMvc.Controllers.CategoriesController.Index (WebSalesMvc)
+2023-12-20 19:41:22.764 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:22.764 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:22.765 -03:00 [INF] Executing action method WebSalesMvc.Controllers.CategoriesController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:22.765 -03:00 [INF] Executing action method WebSalesMvc.Controllers.CategoriesController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:22.765 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:22.765 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:22.767 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`DepartmentId`, `s`.`Description`, `s`.`Name`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Category` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:41:22.767 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`DepartmentId`, `s`.`Description`, `s`.`Name`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Category` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:41:22.770 -03:00 [INF] Executed action method WebSalesMvc.Controllers.CategoriesController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5.3001000000000005ms.
+2023-12-20 19:41:22.771 -03:00 [INF] Executed action method WebSalesMvc.Controllers.CategoriesController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5.3001000000000005ms.
+2023-12-20 19:41:22.771 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:41:22.771 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:41:22.777 -03:00 [INF] Executed ViewResult - view Index executed in 5.6913ms.
+2023-12-20 19:41:22.777 -03:00 [INF] Executed ViewResult - view Index executed in 5.6913ms.
+2023-12-20 19:41:22.777 -03:00 [INF] Executed action WebSalesMvc.Controllers.CategoriesController.Index (WebSalesMvc) in 12.6386ms
+2023-12-20 19:41:22.777 -03:00 [INF] Executed action WebSalesMvc.Controllers.CategoriesController.Index (WebSalesMvc) in 12.6386ms
+2023-12-20 19:41:24.198 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-20 19:41:24.198 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-20 19:41:24.198 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:24.198 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:24.199 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:24.199 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:24.216 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:24.216 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:24.294 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-20 19:41:24.295 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-20 19:41:24.602 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 402.1474ms.
+2023-12-20 19:41:24.602 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 402.1474ms.
+2023-12-20 19:41:24.985 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:41:24.986 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:41:25.271 -03:00 [INF] Route matched with {action = "Index", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc)
+2023-12-20 19:41:25.273 -03:00 [INF] Route matched with {action = "Index", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc)
+2023-12-20 19:41:25.273 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:25.273 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:25.273 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:25.273 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:25.280 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:25.280 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:25.330 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x`.`SalesRecordId`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-20 19:41:25.331 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x`.`SalesRecordId`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-20 19:41:25.342 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 67.8708ms.
+2023-12-20 19:41:25.343 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 67.8708ms.
+2023-12-20 19:41:25.460 -03:00 [INF] Executed ViewResult - view Index executed in 856.73750000000007ms.
+2023-12-20 19:41:25.460 -03:00 [INF] Executed ViewResult - view Index executed in 856.73750000000007ms.
+2023-12-20 19:41:25.461 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 1262.156ms
+2023-12-20 19:41:25.461 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 1262.156ms
+2023-12-20 19:41:25.559 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:41:25.560 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:41:25.581 -03:00 [INF] Executed ViewResult - view Index executed in 236.9549ms.
+2023-12-20 19:41:25.581 -03:00 [INF] Executed ViewResult - view Index executed in 236.9549ms.
+2023-12-20 19:41:25.581 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) in 308.4808ms
+2023-12-20 19:41:25.583 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) in 308.4808ms
+2023-12-20 19:41:26.368 -03:00 [INF] Route matched with {action = "Create", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc)
+2023-12-20 19:41:26.368 -03:00 [INF] Route matched with {action = "Create", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc)
+2023-12-20 19:41:26.369 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:26.369 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:26.369 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:26.369 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:26.372 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:26.373 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:26.376 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`DepartmentId`, `s`.`Description`, `s`.`Name`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Category` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:41:26.376 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`DepartmentId`, `s`.`Description`, `s`.`Name`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Category` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:41:26.377 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.0615ms.
+2023-12-20 19:41:26.377 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.0615ms.
+2023-12-20 19:41:26.675 -03:00 [INF] Executing ViewResult, running view Create.
+2023-12-20 19:41:26.675 -03:00 [INF] Executing ViewResult, running view Create.
+2023-12-20 19:41:26.730 -03:00 [INF] Executed ViewResult - view Create executed in 352.0407ms.
+2023-12-20 19:41:26.730 -03:00 [INF] Executed ViewResult - view Create executed in 352.0407ms.
+2023-12-20 19:41:26.731 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc) in 361.5556ms
+2023-12-20 19:41:26.731 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc) in 361.5556ms
+2023-12-20 19:41:33.725 -03:00 [INF] Route matched with {action = "Create", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc)
+2023-12-20 19:41:33.725 -03:00 [INF] Route matched with {action = "Create", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc)
+2023-12-20 19:41:33.726 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:33.726 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:33.742 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc) with arguments (["WebSalesMvc.Models.Product"]) - Validation state: "Valid"
+2023-12-20 19:41:33.744 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc) with arguments (["WebSalesMvc.Models.Product"]) - Validation state: "Valid"
+2023-12-20 19:41:33.750 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:33.750 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:33.768 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`DepartmentId`, `obj`.`Description`, `obj`.`Name`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Category` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:41:33.768 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`DepartmentId`, `obj`.`Description`, `obj`.`Name`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Category` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:41:33.819 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Double), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Product` (`CategoryId`, `DepartmentId`, `Description`, `ImageUrl`, `Name`, `Price`, `SalesRecordId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT `Id`
+FROM `Product`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-12-20 19:41:33.820 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Double), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Product` (`CategoryId`, `DepartmentId`, `Description`, `ImageUrl`, `Name`, `Price`, `SalesRecordId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT `Id`
+FROM `Product`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-12-20 19:41:33.829 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 85.42ms.
+2023-12-20 19:41:33.830 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 85.42ms.
+2023-12-20 19:41:33.830 -03:00 [INF] Executing RedirectResult, redirecting to /Products/Index.
+2023-12-20 19:41:33.830 -03:00 [INF] Executing RedirectResult, redirecting to /Products/Index.
+2023-12-20 19:41:33.830 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc) in 103.98190000000001ms
+2023-12-20 19:41:33.830 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc) in 103.98190000000001ms
+2023-12-20 19:41:33.840 -03:00 [INF] Route matched with {action = "Index", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc)
+2023-12-20 19:41:33.840 -03:00 [INF] Route matched with {action = "Index", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc)
+2023-12-20 19:41:33.840 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:33.840 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:33.841 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:33.841 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:33.841 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:33.841 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:33.847 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x`.`SalesRecordId`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-20 19:41:33.847 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x`.`SalesRecordId`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-20 19:41:33.860 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 19.2181ms.
+2023-12-20 19:41:33.860 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 19.2181ms.
+2023-12-20 19:41:33.860 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:41:33.860 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:41:33.869 -03:00 [INF] Executed ViewResult - view Index executed in 8.6106ms.
+2023-12-20 19:41:33.870 -03:00 [INF] Executed ViewResult - view Index executed in 8.6106ms.
+2023-12-20 19:41:33.870 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) in 29.570600000000002ms
+2023-12-20 19:41:33.870 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) in 29.570600000000002ms
+2023-12-20 19:41:34.732 -03:00 [INF] Route matched with {action = "Create", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc)
+2023-12-20 19:41:34.732 -03:00 [INF] Route matched with {action = "Create", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc)
+2023-12-20 19:41:34.732 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:34.732 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:34.732 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:34.732 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:34.732 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:34.732 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:34.736 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`DepartmentId`, `s`.`Description`, `s`.`Name`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Category` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:41:34.736 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`DepartmentId`, `s`.`Description`, `s`.`Name`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Category` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:41:34.736 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.0288ms.
+2023-12-20 19:41:34.736 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.0288ms.
+2023-12-20 19:41:34.737 -03:00 [INF] Executing ViewResult, running view Create.
+2023-12-20 19:41:34.737 -03:00 [INF] Executing ViewResult, running view Create.
+2023-12-20 19:41:34.750 -03:00 [INF] Executed ViewResult - view Create executed in 13.368ms.
+2023-12-20 19:41:34.750 -03:00 [INF] Executed ViewResult - view Create executed in 13.368ms.
+2023-12-20 19:41:34.750 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc) in 18.472ms
+2023-12-20 19:41:34.750 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc) in 18.472ms
+2023-12-20 19:41:38.764 -03:00 [INF] Route matched with {action = "Create", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc)
+2023-12-20 19:41:38.764 -03:00 [INF] Route matched with {action = "Create", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc)
+2023-12-20 19:41:38.764 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:38.764 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:38.782 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc) with arguments (["WebSalesMvc.Models.Product"]) - Validation state: "Valid"
+2023-12-20 19:41:38.783 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc) with arguments (["WebSalesMvc.Models.Product"]) - Validation state: "Valid"
+2023-12-20 19:41:38.783 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:38.783 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:38.786 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`DepartmentId`, `obj`.`Description`, `obj`.`Name`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Category` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:41:38.786 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`DepartmentId`, `obj`.`Description`, `obj`.`Name`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Category` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:41:38.795 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Double), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Product` (`CategoryId`, `DepartmentId`, `Description`, `ImageUrl`, `Name`, `Price`, `SalesRecordId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT `Id`
+FROM `Product`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-12-20 19:41:38.795 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Double), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Product` (`CategoryId`, `DepartmentId`, `Description`, `ImageUrl`, `Name`, `Price`, `SalesRecordId`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT `Id`
+FROM `Product`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-12-20 19:41:38.800 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 17.3853ms.
+2023-12-20 19:41:38.800 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 17.3853ms.
+2023-12-20 19:41:38.801 -03:00 [INF] Executing RedirectResult, redirecting to /Products/Index.
+2023-12-20 19:41:38.801 -03:00 [INF] Executing RedirectResult, redirecting to /Products/Index.
+2023-12-20 19:41:38.801 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc) in 36.4927ms
+2023-12-20 19:41:38.801 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Create (WebSalesMvc) in 36.4927ms
+2023-12-20 19:41:38.818 -03:00 [INF] Route matched with {action = "Index", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc)
+2023-12-20 19:41:38.819 -03:00 [INF] Route matched with {action = "Index", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc)
+2023-12-20 19:41:38.819 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:38.819 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:38.819 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:38.819 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:38.820 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:38.820 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:38.825 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x`.`SalesRecordId`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-20 19:41:38.825 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x`.`SalesRecordId`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-20 19:41:38.827 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7.0332ms.
+2023-12-20 19:41:38.827 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7.0332ms.
+2023-12-20 19:41:38.828 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:41:38.828 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:41:38.844 -03:00 [INF] Executed ViewResult - view Index executed in 15.916ms.
+2023-12-20 19:41:38.844 -03:00 [INF] Executed ViewResult - view Index executed in 15.916ms.
+2023-12-20 19:41:38.845 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) in 25.539ms
+2023-12-20 19:41:38.845 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) in 25.539ms
+2023-12-20 19:41:40.337 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-20 19:41:40.337 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-20 19:41:40.337 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:40.337 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:40.337 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:40.337 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:40.340 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:40.341 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:40.348 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-20 19:41:40.350 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-20 19:41:40.351 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 13.9053ms.
+2023-12-20 19:41:40.351 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 13.9053ms.
+2023-12-20 19:41:40.351 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:41:40.351 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:41:40.352 -03:00 [INF] Executed ViewResult - view Index executed in 0.9512ms.
+2023-12-20 19:41:40.352 -03:00 [INF] Executed ViewResult - view Index executed in 0.9512ms.
+2023-12-20 19:41:40.352 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 15.6898ms
+2023-12-20 19:41:40.352 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 15.6898ms
+2023-12-20 19:41:41.474 -03:00 [INF] Route matched with {action = "Create", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc)
+2023-12-20 19:41:41.475 -03:00 [INF] Route matched with {action = "Create", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc)
+2023-12-20 19:41:41.475 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:41.475 -03:00 [INF] Authorization was successful.
+2023-12-20 19:41:41.475 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:41.476 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:41:41.478 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:41.478 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:41:41.482 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:41:41.482 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:41:41.489 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x`.`SalesRecordId`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-20 19:41:41.489 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x`.`SalesRecordId`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-20 19:41:41.490 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 14.0974ms.
+2023-12-20 19:41:41.490 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 14.0974ms.
+2023-12-20 19:41:41.883 -03:00 [INF] Executing ViewResult, running view Create.
+2023-12-20 19:41:41.884 -03:00 [INF] Executing ViewResult, running view Create.
+2023-12-20 19:41:41.958 -03:00 [INF] Executed ViewResult - view Create executed in 467.7355ms.
+2023-12-20 19:41:41.959 -03:00 [INF] Executed ViewResult - view Create executed in 467.7355ms.
+2023-12-20 19:41:41.959 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) in 483.34380000000004ms
+2023-12-20 19:41:41.961 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) in 483.34380000000004ms
+2023-12-20 19:42:28.354 -03:00 [INF] Route matched with {action = "Create", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc)
+2023-12-20 19:42:28.356 -03:00 [INF] Route matched with {action = "Create", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc)
+2023-12-20 19:42:28.365 -03:00 [INF] Authorization was successful.
+2023-12-20 19:42:28.369 -03:00 [INF] Authorization was successful.
+2023-12-20 19:42:28.378 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:42:28.378 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:42:28.382 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:42:28.382 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:42:28.412 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:42:28.412 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:42:28.417 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x`.`SalesRecordId`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-20 19:42:28.417 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x`.`SalesRecordId`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-20 19:42:28.417 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 38.6209ms.
+2023-12-20 19:42:28.417 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 38.6209ms.
+2023-12-20 19:42:28.418 -03:00 [INF] Executing ViewResult, running view Create.
+2023-12-20 19:42:28.418 -03:00 [INF] Executing ViewResult, running view Create.
+2023-12-20 19:42:28.423 -03:00 [INF] Executed ViewResult - view Create executed in 5.5440000000000005ms.
+2023-12-20 19:42:28.423 -03:00 [INF] Executed ViewResult - view Create executed in 5.5440000000000005ms.
+2023-12-20 19:42:28.423 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) in 66.552500000000009ms
+2023-12-20 19:42:28.423 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) in 66.552500000000009ms
+2023-12-20 19:48:32.391 -03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing action UsersController.Login (WebSalesMvc)
+2023-12-20 19:48:32.590 -03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing action UsersController.Login (WebSalesMvc)
+2023-12-20 19:48:32.712 -03:00 [INF] Executing action method UsersController.Login (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:48:32.722 -03:00 [INF] Executing action method UsersController.Login (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:48:32.754 -03:00 [INF] Executed action method UsersController.Login (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.479000000000001ms.
+2023-12-20 19:48:32.756 -03:00 [INF] Executed action method UsersController.Login (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.479000000000001ms.
+2023-12-20 19:48:44.147 -03:00 [INF] Executing ViewResult, running view Login.
+2023-12-20 19:48:44.148 -03:00 [INF] Executing ViewResult, running view Login.
+2023-12-20 19:48:46.457 -03:00 [INF] Executed ViewResult - view Login executed in 13484.033800000001ms.
+2023-12-20 19:48:46.458 -03:00 [INF] Executed ViewResult - view Login executed in 13484.033800000001ms.
+2023-12-20 19:48:46.484 -03:00 [INF] Executed action UsersController.Login (WebSalesMvc) in 13879.4364ms
+2023-12-20 19:48:46.487 -03:00 [INF] Executed action UsersController.Login (WebSalesMvc) in 13879.4364ms
+2023-12-20 19:48:50.408 -03:00 [INF] Route matched with {action = "Index", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc)
+2023-12-20 19:48:50.412 -03:00 [INF] Route matched with {action = "Index", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc)
+2023-12-20 19:48:50.440 -03:00 [INF] Authorization was successful.
+2023-12-20 19:48:50.440 -03:00 [INF] Authorization was successful.
+2023-12-20 19:48:50.457 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:48:50.457 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:48:52.042 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:48:52.049 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:48:52.256 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-20 19:48:52.256 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-20 19:48:52.257 -03:00 [INF] Authorization was successful.
+2023-12-20 19:48:52.257 -03:00 [INF] Authorization was successful.
+2023-12-20 19:48:52.258 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:48:52.259 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:48:52.283 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:48:52.284 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:48:53.922 -03:00 [INF] Executed DbCommand (158ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x`.`SalesRecordId`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-20 19:48:53.924 -03:00 [INF] Executed DbCommand (158ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x`.`SalesRecordId`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-20 19:48:53.929 -03:00 [INF] Executed DbCommand (163ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-20 19:48:53.934 -03:00 [INF] Executed DbCommand (163ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-20 19:48:54.287 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3828.5458000000003ms.
+2023-12-20 19:48:54.287 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3828.5458000000003ms.
+2023-12-20 19:48:54.434 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2174.6284ms.
+2023-12-20 19:48:54.435 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2174.6284ms.
+2023-12-20 19:48:55.237 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:48:55.237 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:48:55.241 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:48:55.242 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:48:55.372 -03:00 [INF] Executed ViewResult - view Index executed in 1083.3929ms.
+2023-12-20 19:48:55.372 -03:00 [INF] Executed ViewResult - view Index executed in 1083.3929ms.
+2023-12-20 19:48:55.373 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) in 4960.7775ms
+2023-12-20 19:48:55.373 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) in 4960.7775ms
+2023-12-20 19:48:56.032 -03:00 [INF] Executed ViewResult - view Index executed in 1596.3793ms.
+2023-12-20 19:48:56.032 -03:00 [INF] Executed ViewResult - view Index executed in 1596.3793ms.
+2023-12-20 19:48:56.035 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 3777.9840000000004ms
+2023-12-20 19:48:56.035 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 3777.9840000000004ms
+2023-12-20 19:48:57.280 -03:00 [INF] Route matched with {action = "Create", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc)
+2023-12-20 19:48:57.280 -03:00 [INF] Route matched with {action = "Create", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc)
+2023-12-20 19:48:57.282 -03:00 [INF] Authorization was successful.
+2023-12-20 19:48:57.282 -03:00 [INF] Authorization was successful.
+2023-12-20 19:48:57.282 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:48:57.282 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:48:57.293 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:48:57.293 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:48:57.395 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:48:57.395 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:48:57.441 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x`.`SalesRecordId`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-20 19:48:57.441 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x`.`SalesRecordId`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-20 19:48:57.442 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 158.92870000000002ms.
+2023-12-20 19:48:57.442 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 158.92870000000002ms.
+2023-12-20 19:48:58.004 -03:00 [INF] Executing ViewResult, running view Create.
+2023-12-20 19:48:58.004 -03:00 [INF] Executing ViewResult, running view Create.
+2023-12-20 19:48:58.392 -03:00 [INF] Executed ViewResult - view Create executed in 949.7567ms.
+2023-12-20 19:48:58.395 -03:00 [INF] Executed ViewResult - view Create executed in 949.7567ms.
+2023-12-20 19:48:58.396 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) in 1114.9506000000001ms
+2023-12-20 19:48:58.396 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) in 1114.9506000000001ms
+2023-12-20 19:49:02.541 -03:00 [INF] Route matched with {action = "SearchProducts", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc)
+2023-12-20 19:49:02.542 -03:00 [INF] Route matched with {action = "SearchProducts", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc)
+2023-12-20 19:49:02.544 -03:00 [INF] Authorization was successful.
+2023-12-20 19:49:02.544 -03:00 [INF] Authorization was successful.
+2023-12-20 19:49:02.635 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc) with arguments (["b"]) - Validation state: "Valid"
+2023-12-20 19:49:02.643 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc) with arguments (["b"]) - Validation state: "Valid"
+2023-12-20 19:49:02.648 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:49:02.649 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:49:02.821 -03:00 [INF] Executed DbCommand (30ms) [Parameters=[@__Format_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`CategoryId`, `p`.`DepartmentId`, `p`.`Description`, `p`.`ImageUrl`, `p`.`Name`, `p`.`Price`, `p`.`SalesRecordId`
+FROM `Product` AS `p`
+WHERE `p`.`Name` LIKE @__Format_1
+2023-12-20 19:49:02.821 -03:00 [INF] Executed DbCommand (30ms) [Parameters=[@__Format_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`CategoryId`, `p`.`DepartmentId`, `p`.`Description`, `p`.`ImageUrl`, `p`.`Name`, `p`.`Price`, `p`.`SalesRecordId`
+FROM `Product` AS `p`
+WHERE `p`.`Name` LIKE @__Format_1
+2023-12-20 19:49:02.834 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 190.6926ms.
+2023-12-20 19:49:02.835 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 190.6926ms.
+2023-12-20 19:49:03.067 -03:00 [INF] Executing PartialViewResult, running view _ProductSearchResults.
+2023-12-20 19:49:03.069 -03:00 [INF] Executing PartialViewResult, running view _ProductSearchResults.
+2023-12-20 19:49:03.076 -03:00 [INF] Executed PartialViewResult - view _ProductSearchResults executed in 235.4986ms.
+2023-12-20 19:49:03.076 -03:00 [INF] Executed PartialViewResult - view _ProductSearchResults executed in 235.4986ms.
+2023-12-20 19:49:03.077 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc) in 533.3659ms
+2023-12-20 19:49:03.077 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc) in 533.3659ms
+2023-12-20 19:49:14.872 -03:00 [INF] Route matched with {action = "Create", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc)
+2023-12-20 19:49:14.874 -03:00 [INF] Route matched with {action = "Create", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc)
+2023-12-20 19:49:14.875 -03:00 [INF] Authorization was successful.
+2023-12-20 19:49:14.875 -03:00 [INF] Authorization was successful.
+2023-12-20 19:49:15.249 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) with arguments (["WebSalesMvc.Models.SalesRecordsCreateViewModel"]) - Validation state: "Valid"
+2023-12-20 19:49:15.249 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) with arguments (["WebSalesMvc.Models.SalesRecordsCreateViewModel"]) - Validation state: "Valid"
+2023-12-20 19:49:15.319 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:49:15.320 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:49:15.429 -03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`CategoryId`, `p`.`DepartmentId`, `p`.`Description`, `p`.`ImageUrl`, `p`.`Name`, `p`.`Price`, `p`.`SalesRecordId`, `p.Department`.`Id`, `p.Department`.`Name`
+FROM `Product` AS `p`
+INNER JOIN `Department` AS `p.Department` ON `p`.`DepartmentId` = `p.Department`.`Id`
+WHERE `p`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:49:15.431 -03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`CategoryId`, `p`.`DepartmentId`, `p`.`Description`, `p`.`ImageUrl`, `p`.`Name`, `p`.`Price`, `p`.`SalesRecordId`, `p.Department`.`Id`, `p.Department`.`Name`
+FROM `Product` AS `p`
+INNER JOIN `Department` AS `p.Department` ON `p`.`DepartmentId` = `p.Department`.`Id`
+WHERE `p`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:49:15.442 -03:00 [DBG] Number of products after adding: 1
+2023-12-20 19:49:15.453 -03:00 [DBG] Amount after updating: 10
+2023-12-20 19:49:15.455 -03:00 [DBG] Number of products before update: 1
+2023-12-20 19:49:15.456 -03:00 [DBG] Updated amount: {Amount}
+2023-12-20 19:49:15.865 -03:00 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `SalesRecord` (`Amount`, `CustomerName`, `Date`, `SellerId`, `Status`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `SalesRecord`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-12-20 19:49:15.865 -03:00 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `SalesRecord` (`Amount`, `CustomerName`, `Date`, `SellerId`, `Status`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `SalesRecord`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-12-20 19:49:15.900 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p6='?' (DbType = Int32), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE `Product` SET `SalesRecordId` = @p5
+WHERE `Id` = @p6;
+SELECT ROW_COUNT();
+2023-12-20 19:49:15.900 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p6='?' (DbType = Int32), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE `Product` SET `SalesRecordId` = @p5
+WHERE `Id` = @p6;
+SELECT ROW_COUNT();
+2023-12-20 19:49:15.944 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 695.4886ms.
+2023-12-20 19:49:15.949 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 695.4886ms.
+2023-12-20 19:49:15.952 -03:00 [INF] Executing RedirectResult, redirecting to /SalesRecords/Index.
+2023-12-20 19:49:15.953 -03:00 [INF] Executing RedirectResult, redirecting to /SalesRecords/Index.
+2023-12-20 19:49:15.956 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) in 1082.2551ms
+2023-12-20 19:49:15.956 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) in 1082.2551ms
+2023-12-20 19:49:15.976 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-20 19:49:15.976 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-20 19:49:15.976 -03:00 [INF] Authorization was successful.
+2023-12-20 19:49:15.976 -03:00 [INF] Authorization was successful.
+2023-12-20 19:49:15.976 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:49:15.976 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:49:15.978 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:49:15.978 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:49:15.983 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-20 19:49:15.983 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-20 19:49:16.021 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:49:16.022 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:49:16.025 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 48.1702ms.
+2023-12-20 19:49:16.025 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 48.1702ms.
+2023-12-20 19:49:16.025 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:49:16.025 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:49:16.035 -03:00 [INF] Executed ViewResult - view Index executed in 8.8169ms.
+2023-12-20 19:49:16.035 -03:00 [INF] Executed ViewResult - view Index executed in 8.8169ms.
+2023-12-20 19:49:16.035 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 58.295ms
+2023-12-20 19:49:16.035 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 58.295ms
+2023-12-20 19:56:48.786 -03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing action UsersController.Login (WebSalesMvc)
+2023-12-20 19:56:48.926 -03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing action UsersController.Login (WebSalesMvc)
+2023-12-20 19:56:49.012 -03:00 [INF] Executing action method UsersController.Login (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:56:49.023 -03:00 [INF] Executing action method UsersController.Login (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:56:49.037 -03:00 [INF] Executed action method UsersController.Login (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7.7724ms.
+2023-12-20 19:56:49.038 -03:00 [INF] Executed action method UsersController.Login (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7.7724ms.
+2023-12-20 19:57:02.439 -03:00 [INF] Executing ViewResult, running view Login.
+2023-12-20 19:57:02.443 -03:00 [INF] Executing ViewResult, running view Login.
+2023-12-20 19:57:04.379 -03:00 [INF] Executed ViewResult - view Login executed in 15310.705600000001ms.
+2023-12-20 19:57:04.380 -03:00 [INF] Executed ViewResult - view Login executed in 15310.705600000001ms.
+2023-12-20 19:57:04.393 -03:00 [INF] Executed action UsersController.Login (WebSalesMvc) in 15464.7661ms
+2023-12-20 19:57:04.394 -03:00 [INF] Executed action UsersController.Login (WebSalesMvc) in 15464.7661ms
+2023-12-20 19:57:11.579 -03:00 [INF] Route matched with {action = "Index", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc)
+2023-12-20 19:57:11.579 -03:00 [INF] Route matched with {action = "Index", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc)
+2023-12-20 19:57:11.603 -03:00 [INF] Authorization was successful.
+2023-12-20 19:57:11.604 -03:00 [INF] Authorization was successful.
+2023-12-20 19:57:11.611 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:57:11.612 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:57:12.068 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-20 19:57:12.068 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-20 19:57:12.068 -03:00 [INF] Authorization was successful.
+2023-12-20 19:57:12.068 -03:00 [INF] Authorization was successful.
+2023-12-20 19:57:12.072 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:57:12.072 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:57:12.485 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-20 19:57:12.486 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-20 19:57:12.486 -03:00 [INF] Authorization was successful.
+2023-12-20 19:57:12.486 -03:00 [INF] Authorization was successful.
+2023-12-20 19:57:12.488 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:57:12.488 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:57:13.109 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:57:13.111 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:57:13.109 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:57:13.112 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:57:13.117 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:57:13.118 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:57:14.925 -03:00 [INF] Executed DbCommand (128ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-20 19:57:14.927 -03:00 [INF] Executed DbCommand (128ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-20 19:57:14.945 -03:00 [INF] Executed DbCommand (127ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-20 19:57:14.947 -03:00 [INF] Executed DbCommand (127ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-20 19:57:15.425 -03:00 [INF] Executed DbCommand (555ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x`.`SalesRecordId`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-20 19:57:15.426 -03:00 [INF] Executed DbCommand (555ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x`.`SalesRecordId`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-20 19:57:15.497 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3885.6312000000003ms.
+2023-12-20 19:57:15.498 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3885.6312000000003ms.
+2023-12-20 19:57:15.549 -03:00 [INF] Executed DbCommand (39ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:57:15.550 -03:00 [INF] Executed DbCommand (39ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:57:15.553 -03:00 [INF] Executed DbCommand (33ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:57:15.556 -03:00 [INF] Executed DbCommand (33ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:57:15.567 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3078.6667ms.
+2023-12-20 19:57:15.567 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3078.6667ms.
+2023-12-20 19:57:15.575 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3494.7365ms.
+2023-12-20 19:57:15.576 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3494.7365ms.
+2023-12-20 19:57:16.231 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:57:16.231 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:57:16.232 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:57:16.232 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:57:16.251 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:57:16.251 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:57:16.376 -03:00 [INF] Executed ViewResult - view Index executed in 871.9158ms.
+2023-12-20 19:57:16.378 -03:00 [INF] Executed ViewResult - view Index executed in 871.9158ms.
+2023-12-20 19:57:16.381 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) in 4799.8960000000006ms
+2023-12-20 19:57:16.384 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) in 4799.8960000000006ms
+2023-12-20 19:57:16.843 -03:00 [INF] Executed ViewResult - view Index executed in 1275.2350000000001ms.
+2023-12-20 19:57:16.844 -03:00 [INF] Executed ViewResult - view Index executed in 1275.2350000000001ms.
+2023-12-20 19:57:16.844 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 4358.4389ms
+2023-12-20 19:57:16.844 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 4358.4389ms
+2023-12-20 19:57:16.847 -03:00 [INF] Executed ViewResult - view Index executed in 1269.7163ms.
+2023-12-20 19:57:16.847 -03:00 [INF] Executed ViewResult - view Index executed in 1269.7163ms.
+2023-12-20 19:57:16.848 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 4780.0404ms
+2023-12-20 19:57:16.848 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 4780.0404ms
+2023-12-20 19:57:18.501 -03:00 [INF] Route matched with {action = "Create", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc)
+2023-12-20 19:57:18.502 -03:00 [INF] Route matched with {action = "Create", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc)
+2023-12-20 19:57:18.502 -03:00 [INF] Authorization was successful.
+2023-12-20 19:57:18.502 -03:00 [INF] Authorization was successful.
+2023-12-20 19:57:18.502 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:57:18.502 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:57:18.509 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:57:18.509 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:57:18.532 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:57:18.532 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:57:18.548 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x`.`SalesRecordId`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-20 19:57:18.548 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x`.`SalesRecordId`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-20 19:57:18.549 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 47.5124ms.
+2023-12-20 19:57:18.549 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 47.5124ms.
+2023-12-20 19:57:18.984 -03:00 [INF] Executing ViewResult, running view Create.
+2023-12-20 19:57:18.985 -03:00 [INF] Executing ViewResult, running view Create.
+2023-12-20 19:57:19.375 -03:00 [INF] Executed ViewResult - view Create executed in 824.9642ms.
+2023-12-20 19:57:19.376 -03:00 [INF] Executed ViewResult - view Create executed in 824.9642ms.
+2023-12-20 19:57:19.377 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) in 875.0707ms
+2023-12-20 19:57:19.377 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) in 875.0707ms
+2023-12-20 19:57:32.059 -03:00 [INF] Route matched with {action = "SearchProducts", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc)
+2023-12-20 19:57:32.061 -03:00 [INF] Route matched with {action = "SearchProducts", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc)
+2023-12-20 19:57:32.065 -03:00 [INF] Authorization was successful.
+2023-12-20 19:57:32.065 -03:00 [INF] Authorization was successful.
+2023-12-20 19:57:32.166 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc) with arguments (["b"]) - Validation state: "Valid"
+2023-12-20 19:57:32.175 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc) with arguments (["b"]) - Validation state: "Valid"
+2023-12-20 19:57:32.179 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:57:32.181 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:57:32.256 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__Format_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`CategoryId`, `p`.`DepartmentId`, `p`.`Description`, `p`.`ImageUrl`, `p`.`Name`, `p`.`Price`, `p`.`SalesRecordId`
+FROM `Product` AS `p`
+WHERE `p`.`Name` LIKE @__Format_1
+2023-12-20 19:57:32.258 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__Format_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`CategoryId`, `p`.`DepartmentId`, `p`.`Description`, `p`.`ImageUrl`, `p`.`Name`, `p`.`Price`, `p`.`SalesRecordId`
+FROM `Product` AS `p`
+WHERE `p`.`Name` LIKE @__Format_1
+2023-12-20 19:57:32.261 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 87.0382ms.
+2023-12-20 19:57:32.262 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 87.0382ms.
+2023-12-20 19:57:32.497 -03:00 [INF] Executing PartialViewResult, running view _ProductSearchResults.
+2023-12-20 19:57:32.498 -03:00 [INF] Executing PartialViewResult, running view _ProductSearchResults.
+2023-12-20 19:57:32.512 -03:00 [INF] Executed PartialViewResult - view _ProductSearchResults executed in 246.6995ms.
+2023-12-20 19:57:32.513 -03:00 [INF] Executed PartialViewResult - view _ProductSearchResults executed in 246.6995ms.
+2023-12-20 19:57:32.513 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc) in 452.59090000000003ms
+2023-12-20 19:57:32.514 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc) in 452.59090000000003ms
+2023-12-20 19:57:35.235 -03:00 [INF] Route matched with {action = "Create", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc)
+2023-12-20 19:57:35.236 -03:00 [INF] Route matched with {action = "Create", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc)
+2023-12-20 19:57:35.236 -03:00 [INF] Authorization was successful.
+2023-12-20 19:57:35.236 -03:00 [INF] Authorization was successful.
+2023-12-20 19:57:35.455 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) with arguments (["WebSalesMvc.Models.SalesRecordsCreateViewModel"]) - Validation state: "Valid"
+2023-12-20 19:57:35.457 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) with arguments (["WebSalesMvc.Models.SalesRecordsCreateViewModel"]) - Validation state: "Valid"
+2023-12-20 19:57:35.501 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:57:35.502 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:57:35.526 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`CategoryId`, `p`.`DepartmentId`, `p`.`Description`, `p`.`ImageUrl`, `p`.`Name`, `p`.`Price`, `p`.`SalesRecordId`, `p.Department`.`Id`, `p.Department`.`Name`
+FROM `Product` AS `p`
+INNER JOIN `Department` AS `p.Department` ON `p`.`DepartmentId` = `p.Department`.`Id`
+WHERE `p`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:57:35.526 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`CategoryId`, `p`.`DepartmentId`, `p`.`Description`, `p`.`ImageUrl`, `p`.`Name`, `p`.`Price`, `p`.`SalesRecordId`, `p.Department`.`Id`, `p.Department`.`Name`
+FROM `Product` AS `p`
+INNER JOIN `Department` AS `p.Department` ON `p`.`DepartmentId` = `p.Department`.`Id`
+WHERE `p`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:57:35.887 -03:00 [INF] Executed DbCommand (32ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `SalesRecord` (`Amount`, `CustomerName`, `Date`, `SellerId`, `Status`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `SalesRecord`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-12-20 19:57:35.889 -03:00 [INF] Executed DbCommand (32ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `SalesRecord` (`Amount`, `CustomerName`, `Date`, `SellerId`, `Status`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `SalesRecord`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-12-20 19:57:35.927 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p6='?' (DbType = Int32), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE `Product` SET `SalesRecordId` = @p5
+WHERE `Id` = @p6;
+SELECT ROW_COUNT();
+2023-12-20 19:57:35.928 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p6='?' (DbType = Int32), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE `Product` SET `SalesRecordId` = @p5
+WHERE `Id` = @p6;
+SELECT ROW_COUNT();
+2023-12-20 19:57:35.976 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 518.7097ms.
+2023-12-20 19:57:35.977 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 518.7097ms.
+2023-12-20 19:57:35.979 -03:00 [INF] Executing RedirectResult, redirecting to /SalesRecords/Index.
+2023-12-20 19:57:35.979 -03:00 [INF] Executing RedirectResult, redirecting to /SalesRecords/Index.
+2023-12-20 19:57:35.981 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) in 745.52ms
+2023-12-20 19:57:35.981 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) in 745.52ms
+2023-12-20 19:57:36.012 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-20 19:57:36.012 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-20 19:57:36.013 -03:00 [INF] Authorization was successful.
+2023-12-20 19:57:36.013 -03:00 [INF] Authorization was successful.
+2023-12-20 19:57:36.014 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:57:36.014 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:57:36.015 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:57:36.015 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:57:36.023 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-20 19:57:36.024 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-20 19:57:36.026 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:57:36.026 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:57:36.028 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:57:36.029 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:57:36.029 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 13.808900000000001ms.
+2023-12-20 19:57:36.029 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 13.808900000000001ms.
+2023-12-20 19:57:36.029 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:57:36.029 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:57:36.030 -03:00 [INF] Executed ViewResult - view Index executed in 1.4808000000000001ms.
+2023-12-20 19:57:36.031 -03:00 [INF] Executed ViewResult - view Index executed in 1.4808000000000001ms.
+2023-12-20 19:57:36.031 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 17.8668ms
+2023-12-20 19:57:36.031 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 17.8668ms
+2023-12-20 19:58:24.646 -03:00 [INF] Route matched with {action = "Edit", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc)
+2023-12-20 19:58:24.647 -03:00 [INF] Route matched with {action = "Edit", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc)
+2023-12-20 19:58:24.647 -03:00 [INF] Authorization was successful.
+2023-12-20 19:58:24.647 -03:00 [INF] Authorization was successful.
+2023-12-20 19:58:24.649 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) with arguments (["2"]) - Validation state: "Valid"
+2023-12-20 19:58:24.649 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) with arguments (["2"]) - Validation state: "Valid"
+2023-12-20 19:58:24.655 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:58:24.655 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:58:24.702 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Amount`, `e`.`CustomerName`, `e`.`Date`, `e`.`SellerId`, `e`.`Status`
+FROM `SalesRecord` AS `e`
+WHERE `e`.`Id` = @__get_Item_0
+LIMIT 1
+2023-12-20 19:58:24.702 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Amount`, `e`.`CustomerName`, `e`.`Date`, `e`.`SellerId`, `e`.`Status`
+FROM `SalesRecord` AS `e`
+WHERE `e`.`Id` = @__get_Item_0
+LIMIT 1
+2023-12-20 19:58:24.712 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:58:24.713 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-20 19:58:24.713 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 63.4795ms.
+2023-12-20 19:58:24.714 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 63.4795ms.
+2023-12-20 19:58:25.305 -03:00 [INF] Executing ViewResult, running view Edit.
+2023-12-20 19:58:25.306 -03:00 [INF] Executing ViewResult, running view Edit.
+2023-12-20 19:58:25.367 -03:00 [INF] Executed ViewResult - view Edit executed in 653.1124ms.
+2023-12-20 19:58:25.367 -03:00 [INF] Executed ViewResult - view Edit executed in 653.1124ms.
+2023-12-20 19:58:25.367 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) in 720.0285ms
+2023-12-20 19:58:25.368 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) in 720.0285ms
+2023-12-20 19:58:33.902 -03:00 [INF] Route matched with {action = "Edit", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc)
+2023-12-20 19:58:33.903 -03:00 [INF] Route matched with {action = "Edit", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc)
+2023-12-20 19:58:33.903 -03:00 [INF] Authorization was successful.
+2023-12-20 19:58:33.903 -03:00 [INF] Authorization was successful.
+2023-12-20 19:58:33.910 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) with arguments (["2","WebSalesMvc.Models.SalesRecordsCreateViewModel"]) - Validation state: "Valid"
+2023-12-20 19:58:33.910 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) with arguments (["2","WebSalesMvc.Models.SalesRecordsCreateViewModel"]) - Validation state: "Valid"
+2023-12-20 19:58:33.913 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:58:33.914 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:58:33.930 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = Double), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE `SalesRecord` SET `Amount` = @p0, `CustomerName` = @p1, `Date` = @p2, `SellerId` = @p3, `Status` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2023-12-20 19:58:33.930 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = Double), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE `SalesRecord` SET `Amount` = @p0, `CustomerName` = @p1, `Date` = @p2, `SellerId` = @p3, `Status` = @p4
+WHERE `Id` = @p5;
+SELECT ROW_COUNT();
+2023-12-20 19:58:33.935 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 25.431ms.
+2023-12-20 19:58:33.935 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 25.431ms.
+2023-12-20 19:58:33.936 -03:00 [INF] Executing RedirectResult, redirecting to /SalesRecords/Index.
+2023-12-20 19:58:33.936 -03:00 [INF] Executing RedirectResult, redirecting to /SalesRecords/Index.
+2023-12-20 19:58:33.936 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) in 32.13ms
+2023-12-20 19:58:33.936 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) in 32.13ms
+2023-12-20 19:58:33.969 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-20 19:58:33.970 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-20 19:58:33.971 -03:00 [INF] Authorization was successful.
+2023-12-20 19:58:33.972 -03:00 [INF] Authorization was successful.
+2023-12-20 19:58:33.973 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:58:33.973 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-20 19:58:33.975 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:58:33.976 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-20 19:58:33.979 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-20 19:58:33.979 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-20 19:58:33.983 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:58:33.983 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:58:33.985 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:58:33.985 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-20 19:58:33.985 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 11.3129ms.
+2023-12-20 19:58:33.985 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 11.3129ms.
+2023-12-20 19:58:33.985 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:58:33.985 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-20 19:58:33.987 -03:00 [INF] Executed ViewResult - view Index executed in 1.4003ms.
+2023-12-20 19:58:33.987 -03:00 [INF] Executed ViewResult - view Index executed in 1.4003ms.
+2023-12-20 19:58:33.987 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 16.704800000000002ms
+2023-12-20 19:58:33.987 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 16.704800000000002ms

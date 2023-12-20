@@ -46,8 +46,12 @@ public class ProductService
         await _context.SaveChangesAsync();
     }
 
-    /*public bool ProductExists(int id)
+    public async Task<List<Product>> FindByNameAsync(string productName)
     {
-        return _context.Product(e => e.Id == id);
-    }*/
+        return await _context.Product
+            .Where(p => EF.Functions.Like(p.Name, $"%{productName}%"))
+            .ToListAsync();
+    }
+
+  
 }

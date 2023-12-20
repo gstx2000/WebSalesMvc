@@ -220,3 +220,4 @@ C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\D
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\WebSalesMvc.csproj.CopyComplete
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\WebSalesMvc.exe
 C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\WebSalesMvc.pdb
+C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\obj\Debug\net472\Razor\Views\Products\_ProductSearchResults.cshtml.g.cs

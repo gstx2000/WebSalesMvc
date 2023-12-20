@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -6,6 +7,9 @@ using Microsoft.EntityFrameworkCore;
 using WebSalesMvc.Data;
 using WebSalesMvc.Models;
 using WebSalesMvc.Services;
+using static WebSalesMvc.Models.SalesRecord;
+using Newtonsoft.Json;
+using Serilog;
 
 namespace WebSalesMvc.Controllers
 {
@@ -14,13 +18,14 @@ namespace WebSalesMvc.Controllers
         private readonly WebSalesMvcContext _context;
         private readonly SalesRecordService _salesRecordService;
         private readonly SellerService _sellerService;
+        private readonly ProductService _productService;
 
-        public SalesRecordsController(WebSalesMvcContext context, SalesRecordService salesRecordService, SellerService sellerService)
+        public SalesRecordsController(WebSalesMvcContext context, SalesRecordService salesRecordService, SellerService sellerService, ProductService productService)
         {
             _context = context;
             _salesRecordService = salesRecordService;
             _sellerService = sellerService;
-
+            _productService = productService;   
         }
         public async Task<IActionResult> Index()
         {
@@ -59,11 +64,13 @@ namespace WebSalesMvc.Controllers
         {
             var sellers = await _sellerService.FindAllAsync();
             var salesRecord = new SalesRecord();
+            var products = await _productService.FindAllAsync();
 
             var viewModel = new SalesRecordsCreateViewModel
             {
                 SalesRecord = salesRecord,
-                Sellers = sellers
+                Sellers = sellers,
+                Products = products
             };
 
             return View(viewModel);
@@ -76,9 +83,30 @@ namespace WebSalesMvc.Controllers
         {
             if (ModelState.IsValid)
             {
-                var salesRecord = viewModel.SalesRecord;
-                await _salesRecordService.InsertAsync(salesRecord);
-                return RedirectToAction(nameof(Index));
+                var salesRecordview = viewModel.SalesRecord;
+
+                if (salesRecordview != null)
+                {
+                    var selectedProducts = JsonConvert.DeserializeObject<List<SelectedProduct>>(viewModel.SelectedProductsJson);
+
+                    salesRecordview.Products = salesRecordview.Products ?? new List<Product>();
+
+                    foreach (var selectedProduct in selectedProducts)
+                    {
+                        var existingProduct = await _productService.FindByIdAsync(selectedProduct.Id);
+
+                        if (existingProduct != null)
+                        {
+                            salesRecordview.Products.Add(existingProduct);
+                        }
+                    }
+
+                    salesRecordview.UpdateAmount();
+
+                    await _salesRecordService.InsertAsync(salesRecordview);
+
+                    return RedirectToAction(nameof(Index));
+                }
             }
 
             var sellers = await _sellerService.FindAllAsync();

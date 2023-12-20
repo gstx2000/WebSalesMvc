@@ -179,6 +179,14 @@ namespace WebSalesMvc.Controllers
             return _context.Product.Any(e => e.Id == id);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> SearchProducts(string searchTerm)
+        {
+            var products = await _productService.FindByNameAsync(searchTerm);
+
+            return PartialView("_ProductSearchResults", products);
+        }
+
         public IActionResult Error(string message)
         {
             var viewModel = new ErrorViewModel

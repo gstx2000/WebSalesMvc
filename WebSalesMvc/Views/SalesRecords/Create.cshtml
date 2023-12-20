@@ -17,32 +17,117 @@
                 <span asp-validation-for="SalesRecord.Date" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SalesRecord.Amount" class="control-label"></label>
-                <input asp-for="SalesRecord.Amount" class="form-control" />
-                <span asp-validation-for="SalesRecord.Amount" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="SalesRecord.Status" class="control-label">Status</label>
                 <select asp-for="SalesRecord.Status" asp-items="Html.GetEnumSelectList<WebSalesMvc.Models.Enums.SaleStatus>()" class="form-control">
                     <option value="">Selecione um Status</option>
                 </select>
-                </div>
+            </div>
             <div class="form-group">
                 <label asp-for="SalesRecord.SellerId" class="control-label">Vendedor</label>
                 <select asp-for="SalesRecord.SellerId" asp-items="@(new SelectList(Model.Sellers, "Id", "Name"))" class="form-control">
                     <option value="">Selecione um vendedor</option>
                 </select>
             </div>
+            <div class="form-group">
+                <label asp-for="SalesRecord.Products" class="control-label">Produtos</label>
+                <input type="text" id="productSearch" class="form-control" placeholder="Selecione os produtos" />
+                <div id="productSearchResults"></div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="SalesRecord.Amount" class="control-label">Valor total</label>
+                <input asp-for="SalesRecord.Amount" class="form-control" readonly />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="SelectedProducts" class="control-label">Produtos Selecionados</label>
+                <ul id="selectedProductsList"></ul>
+                <input type="hidden" id="SelectedProductsJson" name="SelectedProductsJson" />
+            </div>
+
             <div>
                 <input type="submit" value="Criar" class="btn btn-default" />
-
                 <a class="btn btn-default" asp-action="Index">Voltar</a>
             </div>
-</form>
+
+        </form>
     </div>
 </div>
 
 @section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        $(document).ready(function () {
+            
+                    function searchProducts() {
+                var searchTerm = $('#productSearch').val();
+                $.ajax({
+                    url: '/Products/SearchProducts',
+                    type: 'GET',
+                    data: { searchTerm: searchTerm },
+                    success: function (data) {
+                        $('#productSearchResults').html(data);
+                    },
+                    error: function (error) {
+                        console.error('Error fetching product search results:', error);
+                    }
+                });
+            }
+
+            // Function to handle product selection
+            window.selectProduct = function (productId, productName, productPrice) {
+                console.log('Product Selected:', productId, productName, productPrice);
+
+                // Append selected product to the list
+                $('#SelectedProducts').append('<li>' + productName + ' - $' + productPrice + '</li>');
+
+                // Add the selected product to the SalesRecord's SelectedProducts collection
+                var selectedProduct = {
+                    Id: productId,
+                    Name: productName,
+                    Price: parseFloat(productPrice)
+                };
+
+                // Ensure the SalesRecord has a SelectedProducts array initialized
+                if (!window.SalesRecord.SelectedProducts) {
+                    window.SalesRecord.SelectedProducts = [];
+                }
+
+                // Add the selected product to the array
+                window.SalesRecord.SelectedProducts.push(selectedProduct);
+                console.log('Selected Products:', window.SalesRecord.SelectedProducts);
+                $('#SelectedProductsJson').val(JSON.stringify(window.SalesRecord.SelectedProducts));
+
+                // Recalculate and update the total amount
+                updateAmount();
+            }
+
+
+            // Function to update the total amount based on selected products
+            window.updateAmount = function() {
+                var totalAmount = 0;
+
+                // Loop through each selected product and sum up the prices
+                for (var i = 0; i < window.SalesRecord.SelectedProducts.length; i++) {
+                    totalAmount += parseFloat(window.SalesRecord.SelectedProducts[i].Price);
+                }
+
+                // Update the total amount field
+                $('input[name="SalesRecord.Amount"]').val(totalAmount.toFixed(2));
+            }
+
+            $('#productSearch').on('input', function () {
+                searchProducts();
+            });
+
+            // Bind the updateAmount function to the form submission event
+            $('form').submit(function () {
+                updateAmount();
+            });
+        });
+    </script>
+
 }

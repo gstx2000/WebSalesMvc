@@ -65,11 +65,17 @@ namespace WebSalesMvc.Migrations
                     b.Property<string>("Name")
                         .IsRequired();
 
+                    b.Property<double>("Price");
+
+                    b.Property<int?>("SalesRecordId");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
 
                     b.HasIndex("DepartmentId");
+
+                    b.HasIndex("SalesRecordId");
 
                     b.ToTable("Product");
                 });
@@ -80,6 +86,8 @@ namespace WebSalesMvc.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<double>("Amount");
+
+                    b.Property<string>("CustomerName");
 
                     b.Property<DateTime>("Date");
 
@@ -140,6 +148,10 @@ namespace WebSalesMvc.Migrations
                         .WithMany()
                         .HasForeignKey("DepartmentId")
                         .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("WebSalesMvc.Models.SalesRecord")
+                        .WithMany("Products")
+                        .HasForeignKey("SalesRecordId");
                 });
 
             modelBuilder.Entity("WebSalesMvc.Models.SalesRecord", b =>

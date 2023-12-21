@@ -84,12 +84,26 @@ namespace WebSalesMvc.Controllers
             if (ModelState.IsValid)
             {
                 var salesRecordview = viewModel.SalesRecord;
+                var productsToRemove = new List<Product>();
 
                 if (salesRecordview != null)
                 {
                     var selectedProducts = JsonConvert.DeserializeObject<List<SelectedProduct>>(viewModel.SelectedProductsJson);
 
                     salesRecordview.Products = salesRecordview.Products ?? new List<Product>();
+
+                    foreach (var product in salesRecordview.Products)
+                    {
+                        if (!selectedProducts.Any(sp => sp.Id == product.Id))
+                        {
+                            productsToRemove.Add(product);
+                        }
+                    }
+
+                    foreach (var productToRemove in productsToRemove)
+                    {
+                        salesRecordview.Products.Remove(productToRemove);
+                    }
 
                     foreach (var selectedProduct in selectedProducts)
                     {
@@ -101,7 +115,11 @@ namespace WebSalesMvc.Controllers
                         }
                     }
 
+
+
                     salesRecordview.UpdateAmount();
+
+
 
                     await _salesRecordService.InsertAsync(salesRecordview);
 

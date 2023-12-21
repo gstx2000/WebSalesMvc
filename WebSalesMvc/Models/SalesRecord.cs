@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using WebSalesMvc.Models.Enums;
 
@@ -26,6 +27,8 @@ namespace WebSalesMvc.Models
         
         public int SellerId { get; set; }
 
+        [NotMapped]
+
         [Display(Name = "Produtos")]
         public ICollection<Product> Products { get; set; }
 
@@ -42,6 +45,7 @@ namespace WebSalesMvc.Models
         {
             Amount = Products.Sum(product => product.Price);
         }
+
 
         public SalesRecord()
         {

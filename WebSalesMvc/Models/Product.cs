@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using WebSalesMvc.Migrations;
 
 namespace WebSalesMvc.Models
@@ -30,7 +31,8 @@ namespace WebSalesMvc.Models
       
         [Display(Name = "Imagem")]
         public string ImageUrl { get; set; }
-        
+
+        public int SoldCount { get; set; }
 
     }
 

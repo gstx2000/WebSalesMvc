@@ -9,8 +9,8 @@ namespace WebSalesMvc.Data
 {
     public class WebSalesMvcContext : DbContext
     {
-        
-        
+
+       
         public WebSalesMvcContext (DbContextOptions<WebSalesMvcContext> options)
             : base(options)
         {
@@ -21,6 +21,8 @@ namespace WebSalesMvc.Data
         public DbSet<SalesRecord> SalesRecord { get; set; }
         public DbSet<WebSalesMvc.Models.Category> Category { get; set; }
         public DbSet<WebSalesMvc.Models.Product> Product { get; set; }
+
+
 
     }
 }

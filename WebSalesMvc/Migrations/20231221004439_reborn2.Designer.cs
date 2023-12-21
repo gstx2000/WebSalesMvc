@@ -9,8 +9,8 @@ using WebSalesMvc.Data;
 namespace WebSalesMvc.Migrations
 {
     [DbContext(typeof(WebSalesMvcContext))]
-    [Migration("20231220223704_reborn")]
-    partial class reborn
+    [Migration("20231221004439_reborn2")]
+    partial class reborn2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -69,15 +69,11 @@ namespace WebSalesMvc.Migrations
 
                     b.Property<double>("Price");
 
-                    b.Property<int?>("SalesRecordId");
-
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
 
                     b.HasIndex("DepartmentId");
-
-                    b.HasIndex("SalesRecordId");
 
                     b.ToTable("Product");
                 });
@@ -150,10 +146,6 @@ namespace WebSalesMvc.Migrations
                         .WithMany()
                         .HasForeignKey("DepartmentId")
                         .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("WebSalesMvc.Models.SalesRecord")
-                        .WithMany("Products")
-                        .HasForeignKey("SalesRecordId");
                 });
 
             modelBuilder.Entity("WebSalesMvc.Models.SalesRecord", b =>

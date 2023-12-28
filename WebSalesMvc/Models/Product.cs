@@ -32,7 +32,6 @@ namespace WebSalesMvc.Models
         [Display(Name = "Imagem")]
         public string ImageUrl { get; set; }
 
-        public int SoldCount { get; set; }
 
     }
 

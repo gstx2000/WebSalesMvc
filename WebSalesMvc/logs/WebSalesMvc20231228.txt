@@ -1,0 +1,1160 @@
+2023-12-28 08:45:54.635 -03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing action UsersController.Login (WebSalesMvc)
+2023-12-28 08:45:54.984 -03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing action UsersController.Login (WebSalesMvc)
+2023-12-28 08:45:57.101 -03:00 [INF] Executing action method UsersController.Login (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 08:45:57.109 -03:00 [INF] Executing action method UsersController.Login (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 08:45:57.137 -03:00 [INF] Executed action method UsersController.Login (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 16.2371ms.
+2023-12-28 08:45:57.138 -03:00 [INF] Executed action method UsersController.Login (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 16.2371ms.
+2023-12-28 08:46:21.052 -03:00 [INF] Executing ViewResult, running view Login.
+2023-12-28 08:46:21.053 -03:00 [INF] Executing ViewResult, running view Login.
+2023-12-28 08:46:23.702 -03:00 [INF] Executed ViewResult - view Login executed in 26509.8213ms.
+2023-12-28 08:46:23.702 -03:00 [INF] Executed ViewResult - view Login executed in 26509.8213ms.
+2023-12-28 08:46:23.711 -03:00 [INF] Executed action UsersController.Login (WebSalesMvc) in 28721.650100000003ms
+2023-12-28 08:46:23.712 -03:00 [INF] Executed action UsersController.Login (WebSalesMvc) in 28721.650100000003ms
+2023-12-28 08:46:24.852 -03:00 [INF] The file /lib/bootstrap/dist/css/bootstrap-darkly.css was not modified
+2023-12-28 08:46:24.852 -03:00 [INF] The file /lib/bootstrap/dist/css/bootstrap-darkly.css was not modified
+2023-12-28 08:46:24.895 -03:00 [INF] The file /css/site.css was not modified
+2023-12-28 08:46:24.896 -03:00 [INF] The file /css/site.css was not modified
+2023-12-28 08:46:26.293 -03:00 [INF] The file /lib/jquery/dist/jquery.js was not modified
+2023-12-28 08:46:26.296 -03:00 [INF] The file /lib/jquery/dist/jquery.js was not modified
+2023-12-28 08:46:26.327 -03:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.js was not modified
+2023-12-28 08:46:26.327 -03:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.js was not modified
+2023-12-28 08:46:26.618 -03:00 [INF] The file /js/site.js was not modified
+2023-12-28 08:46:26.619 -03:00 [INF] The file /js/site.js was not modified
+2023-12-28 08:46:28.380 -03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\favicon.ico'
+2023-12-28 08:46:28.382 -03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\favicon.ico'
+2023-12-28 08:47:32.700 -03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing action UsersController.Login (WebSalesMvc)
+2023-12-28 08:47:32.701 -03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing action UsersController.Login (WebSalesMvc)
+2023-12-28 08:47:33.138 -03:00 [INF] Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.FaeWA-Boc3o" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.FaeWA-Boc3o" is not present.
+   em Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+2023-12-28 08:47:33.139 -03:00 [INF] Antiforgery token validation failed. The required antiforgery cookie ".AspNetCore.Antiforgery.FaeWA-Boc3o" is not present.
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery cookie ".AspNetCore.Antiforgery.FaeWA-Boc3o" is not present.
+   em Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.<ValidateRequestAsync>d__9.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.<OnAuthorizationAsync>d__3.MoveNext()
+2023-12-28 08:47:33.156 -03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+2023-12-28 08:47:33.157 -03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter'.
+2023-12-28 08:47:33.166 -03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400
+2023-12-28 08:47:33.167 -03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400
+2023-12-28 08:47:33.170 -03:00 [INF] Executed action UsersController.Login (WebSalesMvc) in 465.0452ms
+2023-12-28 08:47:33.170 -03:00 [INF] Executed action UsersController.Login (WebSalesMvc) in 465.0452ms
+2023-12-28 08:47:43.547 -03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing action UsersController.Login (WebSalesMvc)
+2023-12-28 08:47:43.548 -03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing action UsersController.Login (WebSalesMvc)
+2023-12-28 08:47:43.591 -03:00 [INF] Executing action method UsersController.Login (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 08:47:43.592 -03:00 [INF] Executing action method UsersController.Login (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 08:47:43.592 -03:00 [INF] Executed action method UsersController.Login (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.034ms.
+2023-12-28 08:47:43.610 -03:00 [INF] Executed action method UsersController.Login (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.034ms.
+2023-12-28 08:47:43.619 -03:00 [INF] Executing ViewResult, running view Login.
+2023-12-28 08:47:43.620 -03:00 [INF] Executing ViewResult, running view Login.
+2023-12-28 08:47:43.647 -03:00 [INF] Executed ViewResult - view Login executed in 35.5949ms.
+2023-12-28 08:47:43.648 -03:00 [INF] Executed ViewResult - view Login executed in 35.5949ms.
+2023-12-28 08:47:43.648 -03:00 [INF] Executed action UsersController.Login (WebSalesMvc) in 100.40910000000001ms
+2023-12-28 08:47:43.648 -03:00 [INF] Executed action UsersController.Login (WebSalesMvc) in 100.40910000000001ms
+2023-12-28 08:47:43.919 -03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\css\site.css'
+2023-12-28 08:47:43.919 -03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\css\site.css'
+2023-12-28 08:47:43.926 -03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\js\site.js'
+2023-12-28 08:47:43.926 -03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\js\site.js'
+2023-12-28 08:47:44.076 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+2023-12-28 08:47:44.077 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+2023-12-28 08:47:44.084 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap-darkly.css'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\lib\bootstrap\dist\css\bootstrap-darkly.css'
+2023-12-28 08:47:44.084 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap-darkly.css'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\lib\bootstrap\dist\css\bootstrap-darkly.css'
+2023-12-28 08:47:44.089 -03:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\lib\jquery\dist\jquery.js'
+2023-12-28 08:47:44.090 -03:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\lib\jquery\dist\jquery.js'
+2023-12-28 08:47:44.346 -03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\favicon.ico'
+2023-12-28 08:47:44.346 -03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\favicon.ico'
+2023-12-28 08:47:48.042 -03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing action UsersController.Login (WebSalesMvc)
+2023-12-28 08:47:48.043 -03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing action UsersController.Login (WebSalesMvc)
+2023-12-28 08:47:48.195 -03:00 [INF] Executing action method UsersController.Login (WebSalesMvc) with arguments (["LoginViewModel"]) - Validation state: "Valid"
+2023-12-28 08:47:48.205 -03:00 [INF] Executing action method UsersController.Login (WebSalesMvc) with arguments (["LoginViewModel"]) - Validation state: "Valid"
+2023-12-28 08:47:49.489 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 08:47:49.489 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 08:47:50.950 -03:00 [INF] Executed DbCommand (180ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`AccessFailedCount`, `u`.`ConcurrencyStamp`, `u`.`Email`, `u`.`EmailConfirmed`, `u`.`LockoutEnabled`, `u`.`LockoutEnd`, `u`.`NormalizedEmail`, `u`.`NormalizedUserName`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`PhoneNumberConfirmed`, `u`.`SecurityStamp`, `u`.`TwoFactorEnabled`, `u`.`UserName`
+FROM `AspNetUsers` AS `u`
+WHERE `u`.`NormalizedUserName` = @__normalizedUserName_0
+LIMIT 1
+2023-12-28 08:47:50.950 -03:00 [INF] Executed DbCommand (180ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`AccessFailedCount`, `u`.`ConcurrencyStamp`, `u`.`Email`, `u`.`EmailConfirmed`, `u`.`LockoutEnabled`, `u`.`LockoutEnd`, `u`.`NormalizedEmail`, `u`.`NormalizedUserName`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`PhoneNumberConfirmed`, `u`.`SecurityStamp`, `u`.`TwoFactorEnabled`, `u`.`UserName`
+FROM `AspNetUsers` AS `u`
+WHERE `u`.`NormalizedUserName` = @__normalizedUserName_0
+LIMIT 1
+2023-12-28 08:47:51.263 -03:00 [WRN] Invalid password for user 1af1e95b-0c22-4ad4-89cb-7e4d027be566.
+2023-12-28 08:47:51.263 -03:00 [WRN] Invalid password for user 1af1e95b-0c22-4ad4-89cb-7e4d027be566.
+2023-12-28 08:47:51.264 -03:00 [WRN] User 1af1e95b-0c22-4ad4-89cb-7e4d027be566 failed to provide the correct password.
+2023-12-28 08:47:51.264 -03:00 [WRN] User 1af1e95b-0c22-4ad4-89cb-7e4d027be566 failed to provide the correct password.
+2023-12-28 08:47:51.267 -03:00 [INF] Executed action method UsersController.Login (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3061.4892ms.
+2023-12-28 08:47:51.268 -03:00 [INF] Executed action method UsersController.Login (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3061.4892ms.
+2023-12-28 08:47:51.269 -03:00 [INF] Executing ViewResult, running view Login.
+2023-12-28 08:47:51.269 -03:00 [INF] Executing ViewResult, running view Login.
+2023-12-28 08:47:51.281 -03:00 [INF] Executed ViewResult - view Login executed in 11.738100000000001ms.
+2023-12-28 08:47:51.281 -03:00 [INF] Executed ViewResult - view Login executed in 11.738100000000001ms.
+2023-12-28 08:47:51.282 -03:00 [INF] Executed action UsersController.Login (WebSalesMvc) in 3238.3613ms
+2023-12-28 08:47:51.282 -03:00 [INF] Executed action UsersController.Login (WebSalesMvc) in 3238.3613ms
+2023-12-28 08:47:56.063 -03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing action UsersController.Login (WebSalesMvc)
+2023-12-28 08:47:56.064 -03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing action UsersController.Login (WebSalesMvc)
+2023-12-28 08:47:56.067 -03:00 [INF] Executing action method UsersController.Login (WebSalesMvc) with arguments (["LoginViewModel"]) - Validation state: "Valid"
+2023-12-28 08:47:56.067 -03:00 [INF] Executing action method UsersController.Login (WebSalesMvc) with arguments (["LoginViewModel"]) - Validation state: "Valid"
+2023-12-28 08:47:56.071 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 08:47:56.071 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 08:47:56.114 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`AccessFailedCount`, `u`.`ConcurrencyStamp`, `u`.`Email`, `u`.`EmailConfirmed`, `u`.`LockoutEnabled`, `u`.`LockoutEnd`, `u`.`NormalizedEmail`, `u`.`NormalizedUserName`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`PhoneNumberConfirmed`, `u`.`SecurityStamp`, `u`.`TwoFactorEnabled`, `u`.`UserName`
+FROM `AspNetUsers` AS `u`
+WHERE `u`.`NormalizedUserName` = @__normalizedUserName_0
+LIMIT 1
+2023-12-28 08:47:56.115 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT `u`.`Id`, `u`.`AccessFailedCount`, `u`.`ConcurrencyStamp`, `u`.`Email`, `u`.`EmailConfirmed`, `u`.`LockoutEnabled`, `u`.`LockoutEnd`, `u`.`NormalizedEmail`, `u`.`NormalizedUserName`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`PhoneNumberConfirmed`, `u`.`SecurityStamp`, `u`.`TwoFactorEnabled`, `u`.`UserName`
+FROM `AspNetUsers` AS `u`
+WHERE `u`.`NormalizedUserName` = @__normalizedUserName_0
+LIMIT 1
+2023-12-28 08:47:56.380 -03:00 [INF] Executed DbCommand (17ms) [Parameters=[@__user_Id_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `uc`.`Id`, `uc`.`ClaimType`, `uc`.`ClaimValue`, `uc`.`UserId`
+FROM `AspNetUserClaims` AS `uc`
+WHERE `uc`.`UserId` = @__user_Id_0
+2023-12-28 08:47:56.381 -03:00 [INF] Executed DbCommand (17ms) [Parameters=[@__user_Id_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `uc`.`Id`, `uc`.`ClaimType`, `uc`.`ClaimValue`, `uc`.`UserId`
+FROM `AspNetUserClaims` AS `uc`
+WHERE `uc`.`UserId` = @__user_Id_0
+2023-12-28 08:47:56.494 -03:00 [INF] Executed DbCommand (17ms) [Parameters=[@__userId_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `role`.`Name`
+FROM `AspNetUserRoles` AS `userRole`
+INNER JOIN `AspNetRoles` AS `role` ON `userRole`.`RoleId` = `role`.`Id`
+WHERE `userRole`.`UserId` = @__userId_0
+2023-12-28 08:47:56.494 -03:00 [INF] Executed DbCommand (17ms) [Parameters=[@__userId_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `role`.`Name`
+FROM `AspNetUserRoles` AS `userRole`
+INNER JOIN `AspNetRoles` AS `role` ON `userRole`.`RoleId` = `role`.`Id`
+WHERE `userRole`.`UserId` = @__userId_0
+2023-12-28 08:47:56.538 -03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-12-28 08:47:56.538 -03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-12-28 08:47:56.540 -03:00 [INF] Executed action method UsersController.Login (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 472.1505ms.
+2023-12-28 08:47:56.541 -03:00 [INF] Executed action method UsersController.Login (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 472.1505ms.
+2023-12-28 08:47:56.545 -03:00 [INF] Executing RedirectResult, redirecting to /Home/Index.
+2023-12-28 08:47:56.546 -03:00 [INF] Executing RedirectResult, redirecting to /Home/Index.
+2023-12-28 08:47:56.548 -03:00 [INF] Executed action UsersController.Login (WebSalesMvc) in 483.6644ms
+2023-12-28 08:47:56.548 -03:00 [INF] Executed action UsersController.Login (WebSalesMvc) in 483.6644ms
+2023-12-28 08:47:56.588 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing action WebSalesMvc.Controllers.HomeController.Index (WebSalesMvc)
+2023-12-28 08:47:56.589 -03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing action WebSalesMvc.Controllers.HomeController.Index (WebSalesMvc)
+2023-12-28 08:47:56.612 -03:00 [INF] Authorization was successful.
+2023-12-28 08:47:56.612 -03:00 [INF] Authorization was successful.
+2023-12-28 08:47:56.613 -03:00 [INF] Executing action method WebSalesMvc.Controllers.HomeController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 08:47:56.613 -03:00 [INF] Executing action method WebSalesMvc.Controllers.HomeController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 08:47:56.615 -03:00 [INF] Executed action method WebSalesMvc.Controllers.HomeController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4267ms.
+2023-12-28 08:47:56.615 -03:00 [INF] Executed action method WebSalesMvc.Controllers.HomeController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4267ms.
+2023-12-28 08:47:57.203 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-28 08:47:57.203 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-28 08:47:57.233 -03:00 [INF] Executed ViewResult - view Index executed in 617.7249ms.
+2023-12-28 08:47:57.233 -03:00 [INF] Executed ViewResult - view Index executed in 617.7249ms.
+2023-12-28 08:47:57.234 -03:00 [INF] Executed action WebSalesMvc.Controllers.HomeController.Index (WebSalesMvc) in 644.8678ms
+2023-12-28 08:47:57.234 -03:00 [INF] Executed action WebSalesMvc.Controllers.HomeController.Index (WebSalesMvc) in 644.8678ms
+2023-12-28 08:47:57.414 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2'
+2023-12-28 08:47:57.414 -03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2'
+2023-12-28 08:47:57.463 -03:00 [INF] Sending file. Request path: '/images/banner2.svg'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\images\banner2.svg'
+2023-12-28 08:47:57.463 -03:00 [INF] Sending file. Request path: '/images/banner2.svg'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\images\banner2.svg'
+2023-12-28 08:47:57.484 -03:00 [INF] Sending file. Request path: '/images/banner1.svg'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\images\banner1.svg'
+2023-12-28 08:47:57.485 -03:00 [INF] Sending file. Request path: '/images/banner1.svg'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\images\banner1.svg'
+2023-12-28 08:47:57.495 -03:00 [INF] Sending file. Request path: '/images/banner3.svg'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\images\banner3.svg'
+2023-12-28 08:47:57.495 -03:00 [INF] Sending file. Request path: '/images/banner3.svg'. Physical path: 'C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\wwwroot\images\banner3.svg'
+2023-12-28 08:48:04.024 -03:00 [INF] Route matched with {action = "Index", controller = "Sellers"}. Executing action WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc)
+2023-12-28 08:48:04.025 -03:00 [INF] Route matched with {action = "Index", controller = "Sellers"}. Executing action WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc)
+2023-12-28 08:48:04.025 -03:00 [INF] Authorization was successful.
+2023-12-28 08:48:04.026 -03:00 [INF] Authorization was successful.
+2023-12-28 08:48:04.049 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 08:48:04.050 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 08:48:04.228 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 08:48:04.228 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 08:48:04.401 -03:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-28 08:48:04.401 -03:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-28 08:48:04.569 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 518.85430000000008ms.
+2023-12-28 08:48:04.570 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 518.85430000000008ms.
+2023-12-28 08:48:05.263 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-28 08:48:05.264 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-28 08:48:05.640 -03:00 [INF] Executed ViewResult - view Index executed in 1068.9283ms.
+2023-12-28 08:48:05.641 -03:00 [INF] Executed ViewResult - view Index executed in 1068.9283ms.
+2023-12-28 08:48:05.642 -03:00 [INF] Executed action WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc) in 1616.5612ms
+2023-12-28 08:48:05.644 -03:00 [INF] Executed action WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc) in 1616.5612ms
+2023-12-28 08:48:53.652 -03:00 [INF] Route matched with {action = "Index", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc)
+2023-12-28 08:48:53.652 -03:00 [INF] Route matched with {action = "Index", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc)
+2023-12-28 08:48:53.652 -03:00 [INF] Authorization was successful.
+2023-12-28 08:48:53.652 -03:00 [INF] Authorization was successful.
+2023-12-28 08:48:53.653 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 08:48:53.653 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 08:48:53.691 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 08:48:53.691 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 08:48:53.901 -03:00 [ERR] Failed executing DbCommand (105ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x`.`SoldCount`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'x.SoldCount' in 'field list' ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'x.SoldCount' in 'field list'
+   em MySqlConnector.Core.ServerSession.TryAsyncContinuation(Task`1 task) na C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:linha 1169
+   em System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   em System.Threading.Tasks.Task.Execute()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em MySqlConnector.Core.ResultSet.<ReadResultSetHeaderAsync>d__1.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:linha 44
+   em MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 102
+   em MySql.Data.MySqlClient.MySqlDataReader.<ReadFirstResultSetAsync>d__90.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 328
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em MySql.Data.MySqlClient.MySqlDataReader.<CreateAsync>d__89.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 318
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em MySqlConnector.Core.TextCommandExecutor.<ExecuteReaderAsync>d__3.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:linha 73
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.<ExecuteAsync>d__17.MoveNext()
+2023-12-28 08:48:54.244 -03:00 [ERR] Failed executing DbCommand (105ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x`.`SoldCount`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'x.SoldCount' in 'field list' ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'x.SoldCount' in 'field list'
+   em MySqlConnector.Core.ServerSession.TryAsyncContinuation(Task`1 task) na C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:linha 1169
+   em System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   em System.Threading.Tasks.Task.Execute()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em MySqlConnector.Core.ResultSet.<ReadResultSetHeaderAsync>d__1.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:linha 44
+   em MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 102
+   em MySql.Data.MySqlClient.MySqlDataReader.<ReadFirstResultSetAsync>d__90.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 328
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em MySql.Data.MySqlClient.MySqlDataReader.<CreateAsync>d__89.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 318
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em MySqlConnector.Core.TextCommandExecutor.<ExecuteReaderAsync>d__3.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:linha 73
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.<ExecuteAsync>d__17.MoveNext()
+2023-12-28 08:48:54.280 -03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'WebSalesMvc.Data.WebSalesMvcContext'.
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'x.SoldCount' in 'field list' ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'x.SoldCount' in 'field list'
+   em MySqlConnector.Core.ServerSession.TryAsyncContinuation(Task`1 task) na C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:linha 1169
+   em System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   em System.Threading.Tasks.Task.Execute()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em MySqlConnector.Core.ResultSet.<ReadResultSetHeaderAsync>d__1.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:linha 44
+   em MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 102
+   em MySql.Data.MySqlClient.MySqlDataReader.<ReadFirstResultSetAsync>d__90.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 328
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em MySql.Data.MySqlClient.MySqlDataReader.<CreateAsync>d__89.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 318
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em MySqlConnector.Core.TextCommandExecutor.<ExecuteReaderAsync>d__3.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:linha 73
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.<ExecuteAsync>d__17.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__12.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__11.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext() na D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:linha 106
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext() na D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:linha 109
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'x.SoldCount' in 'field list' ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'x.SoldCount' in 'field list'
+   em MySqlConnector.Core.ServerSession.TryAsyncContinuation(Task`1 task) na C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:linha 1169
+   em System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   em System.Threading.Tasks.Task.Execute()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em MySqlConnector.Core.ResultSet.<ReadResultSetHeaderAsync>d__1.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:linha 44
+   em MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 102
+   em MySql.Data.MySqlClient.MySqlDataReader.<ReadFirstResultSetAsync>d__90.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 328
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em MySql.Data.MySqlClient.MySqlDataReader.<CreateAsync>d__89.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 318
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em MySqlConnector.Core.TextCommandExecutor.<ExecuteReaderAsync>d__3.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:linha 73
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.<ExecuteAsync>d__17.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__12.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__11.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext() na D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:linha 106
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext() na D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:linha 109
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+2023-12-28 08:48:54.315 -03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'WebSalesMvc.Data.WebSalesMvcContext'.
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'x.SoldCount' in 'field list' ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'x.SoldCount' in 'field list'
+   em MySqlConnector.Core.ServerSession.TryAsyncContinuation(Task`1 task) na C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:linha 1169
+   em System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   em System.Threading.Tasks.Task.Execute()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em MySqlConnector.Core.ResultSet.<ReadResultSetHeaderAsync>d__1.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:linha 44
+   em MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 102
+   em MySql.Data.MySqlClient.MySqlDataReader.<ReadFirstResultSetAsync>d__90.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 328
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em MySql.Data.MySqlClient.MySqlDataReader.<CreateAsync>d__89.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 318
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em MySqlConnector.Core.TextCommandExecutor.<ExecuteReaderAsync>d__3.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:linha 73
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.<ExecuteAsync>d__17.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__12.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__11.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext() na D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:linha 106
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext() na D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:linha 109
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'x.SoldCount' in 'field list' ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'x.SoldCount' in 'field list'
+   em MySqlConnector.Core.ServerSession.TryAsyncContinuation(Task`1 task) na C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:linha 1169
+   em System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   em System.Threading.Tasks.Task.Execute()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em MySqlConnector.Core.ResultSet.<ReadResultSetHeaderAsync>d__1.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:linha 44
+   em MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 102
+   em MySql.Data.MySqlClient.MySqlDataReader.<ReadFirstResultSetAsync>d__90.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 328
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em MySql.Data.MySqlClient.MySqlDataReader.<CreateAsync>d__89.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 318
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em MySqlConnector.Core.TextCommandExecutor.<ExecuteReaderAsync>d__3.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:linha 73
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.<ExecuteAsync>d__17.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__12.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__11.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext() na D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:linha 106
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext() na D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:linha 109
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+2023-12-28 08:48:54.349 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) in 696.18090000000007ms
+2023-12-28 08:48:54.349 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) in 696.18090000000007ms
+2023-12-28 08:48:54.541 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'x.SoldCount' in 'field list' ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'x.SoldCount' in 'field list'
+   em MySqlConnector.Core.ServerSession.TryAsyncContinuation(Task`1 task) na C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:linha 1169
+   em System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   em System.Threading.Tasks.Task.Execute()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em MySqlConnector.Core.ResultSet.<ReadResultSetHeaderAsync>d__1.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:linha 44
+   em MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 102
+   em MySql.Data.MySqlClient.MySqlDataReader.<ReadFirstResultSetAsync>d__90.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 328
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em MySql.Data.MySqlClient.MySqlDataReader.<CreateAsync>d__89.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 318
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em MySqlConnector.Core.TextCommandExecutor.<ExecuteReaderAsync>d__3.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:linha 73
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.<ExecuteAsync>d__17.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__12.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__11.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext() na D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:linha 106
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext() na D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:linha 109
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Linq.AsyncEnumerable.<Aggregate_>d__6`3.MoveNext() na D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Aggregate.cs:linha 120
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   em ProductService.<FindAllAsync>d__2.MoveNext() na C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\Services\ProductService.cs:linha 19
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   em WebSalesMvc.Controllers.ProductsController.<Index>d__5.MoveNext() na C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\Controllers\ProductsController.cs:linha 33
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.<Execute>d__0.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   em Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   em Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__23.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   em Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   em Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__18.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__16.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.<Invoke>d__7.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2023-12-28 08:48:54.931 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'x.SoldCount' in 'field list' ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown column 'x.SoldCount' in 'field list'
+   em MySqlConnector.Core.ServerSession.TryAsyncContinuation(Task`1 task) na C:\projects\mysqlconnector\src\MySqlConnector\Core\ServerSession.cs:linha 1169
+   em System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   em System.Threading.Tasks.Task.Execute()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em MySqlConnector.Core.ResultSet.<ReadResultSetHeaderAsync>d__1.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:linha 44
+   em MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 102
+   em MySql.Data.MySqlClient.MySqlDataReader.<ReadFirstResultSetAsync>d__90.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 328
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em MySql.Data.MySqlClient.MySqlDataReader.<CreateAsync>d__89.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:linha 318
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em MySqlConnector.Core.TextCommandExecutor.<ExecuteReaderAsync>d__3.MoveNext() na C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:linha 73
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.<ExecuteAsync>d__17.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<BufferlessMoveNext>d__12.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.<MoveNext>d__11.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.<MoveNextCore>d__7.MoveNext() na D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:linha 106
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Linq.AsyncEnumerable.AsyncIterator`1.<MoveNext>d__10.MoveNext() na D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:linha 109
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Linq.AsyncEnumerable.<Aggregate_>d__6`3.MoveNext() na D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Aggregate.cs:linha 120
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   em ProductService.<FindAllAsync>d__2.MoveNext() na C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\Services\ProductService.cs:linha 19
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   em WebSalesMvc.Controllers.ProductsController.<Index>d__5.MoveNext() na C:\Users\gst20\OneDrive\Área de Trabalho\SalesWeb\WebSalesMvc\WebSalesMvc\Controllers\ProductsController.cs:linha 33
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.<Execute>d__0.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   em Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   em Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__13.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__23.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   em Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   em Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__18.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeAsync>d__16.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.<Invoke>d__7.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+2023-12-28 08:50:20.400 -03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing action UsersController.Login (WebSalesMvc)
+2023-12-28 08:50:20.516 -03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing action UsersController.Login (WebSalesMvc)
+2023-12-28 08:50:20.603 -03:00 [INF] Executing action method UsersController.Login (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 08:50:20.614 -03:00 [INF] Executing action method UsersController.Login (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 08:50:20.629 -03:00 [INF] Executed action method UsersController.Login (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.8708ms.
+2023-12-28 08:50:20.630 -03:00 [INF] Executed action method UsersController.Login (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 6.8708ms.
+2023-12-28 08:50:37.170 -03:00 [INF] Executing ViewResult, running view Login.
+2023-12-28 08:50:37.171 -03:00 [INF] Executing ViewResult, running view Login.
+2023-12-28 08:50:39.221 -03:00 [INF] Executed ViewResult - view Login executed in 18559.5688ms.
+2023-12-28 08:50:39.222 -03:00 [INF] Executed ViewResult - view Login executed in 18559.5688ms.
+2023-12-28 08:50:39.234 -03:00 [INF] Executed action UsersController.Login (WebSalesMvc) in 18715.6096ms
+2023-12-28 08:50:39.234 -03:00 [INF] Executed action UsersController.Login (WebSalesMvc) in 18715.6096ms
+2023-12-28 08:50:42.182 -03:00 [INF] Route matched with {action = "Index", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc)
+2023-12-28 08:50:42.183 -03:00 [INF] Route matched with {action = "Index", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc)
+2023-12-28 08:50:42.217 -03:00 [INF] Authorization was successful.
+2023-12-28 08:50:42.217 -03:00 [INF] Authorization was successful.
+2023-12-28 08:50:42.225 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 08:50:42.226 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 08:50:43.806 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 08:50:43.806 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 08:50:45.440 -03:00 [INF] Executed DbCommand (87ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-28 08:50:45.441 -03:00 [INF] Executed DbCommand (87ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-28 08:50:45.941 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3714.3835000000004ms.
+2023-12-28 08:50:45.941 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3714.3835000000004ms.
+2023-12-28 08:50:46.809 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-28 08:50:46.831 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-28 08:50:47.488 -03:00 [INF] Executed ViewResult - view Index executed in 1543.6061ms.
+2023-12-28 08:50:47.488 -03:00 [INF] Executed ViewResult - view Index executed in 1543.6061ms.
+2023-12-28 08:50:47.490 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) in 5305.9313ms
+2023-12-28 08:50:47.490 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.Index (WebSalesMvc) in 5305.9313ms
+2023-12-28 08:50:56.440 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-28 08:50:56.441 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-28 08:50:56.442 -03:00 [INF] Authorization was successful.
+2023-12-28 08:50:56.443 -03:00 [INF] Authorization was successful.
+2023-12-28 08:50:56.445 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 08:50:56.445 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 08:50:56.468 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 08:50:56.469 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 08:50:56.656 -03:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-28 08:50:56.656 -03:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-28 08:50:56.915 -03:00 [INF] Executed DbCommand (26ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-28 08:50:56.916 -03:00 [INF] Executed DbCommand (26ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-28 08:50:56.927 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 481.2477ms.
+2023-12-28 08:50:56.928 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 481.2477ms.
+2023-12-28 08:50:57.276 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-28 08:50:57.277 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-28 08:50:57.815 -03:00 [INF] Executed ViewResult - view Index executed in 882.69270000000006ms.
+2023-12-28 08:50:57.815 -03:00 [INF] Executed ViewResult - view Index executed in 882.69270000000006ms.
+2023-12-28 08:50:57.816 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 1374.3156000000001ms
+2023-12-28 08:50:57.817 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 1374.3156000000001ms
+2023-12-28 08:50:59.135 -03:00 [INF] Route matched with {action = "Create", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc)
+2023-12-28 08:50:59.136 -03:00 [INF] Route matched with {action = "Create", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc)
+2023-12-28 08:50:59.136 -03:00 [INF] Authorization was successful.
+2023-12-28 08:50:59.137 -03:00 [INF] Authorization was successful.
+2023-12-28 08:50:59.138 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 08:50:59.140 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 08:50:59.145 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 08:50:59.146 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 08:50:59.162 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-28 08:50:59.163 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-28 08:50:59.188 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-28 08:50:59.188 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`CategoryId`, `x`.`DepartmentId`, `x`.`Description`, `x`.`ImageUrl`, `x`.`Name`, `x`.`Price`, `x.Department`.`Id`, `x.Department`.`Name`, `x.Category`.`Id`, `x.Category`.`DepartmentId`, `x.Category`.`Description`, `x.Category`.`Name`
+FROM `Product` AS `x`
+INNER JOIN `Department` AS `x.Department` ON `x`.`DepartmentId` = `x.Department`.`Id`
+INNER JOIN `Category` AS `x.Category` ON `x`.`CategoryId` = `x.Category`.`Id`
+2023-12-28 08:50:59.189 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 49.0747ms.
+2023-12-28 08:50:59.189 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 49.0747ms.
+2023-12-28 08:50:59.626 -03:00 [INF] Executing ViewResult, running view Create.
+2023-12-28 08:50:59.627 -03:00 [INF] Executing ViewResult, running view Create.
+2023-12-28 08:51:00.020 -03:00 [INF] Executed ViewResult - view Create executed in 830.9731ms.
+2023-12-28 08:51:00.020 -03:00 [INF] Executed ViewResult - view Create executed in 830.9731ms.
+2023-12-28 08:51:00.020 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) in 884.9188ms
+2023-12-28 08:51:00.021 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) in 884.9188ms
+2023-12-28 08:51:00.171 -03:00 [INF] The file /lib/jquery-validation/dist/jquery.validate.js was not modified
+2023-12-28 08:51:00.171 -03:00 [INF] The file /lib/jquery-validation/dist/jquery.validate.js was not modified
+2023-12-28 08:51:00.174 -03:00 [INF] The file /lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js was not modified
+2023-12-28 08:51:00.175 -03:00 [INF] The file /lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js was not modified
+2023-12-28 08:51:11.228 -03:00 [INF] Route matched with {action = "SearchProducts", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc)
+2023-12-28 08:51:11.229 -03:00 [INF] Route matched with {action = "SearchProducts", controller = "Products"}. Executing action WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc)
+2023-12-28 08:51:11.229 -03:00 [INF] Authorization was successful.
+2023-12-28 08:51:11.229 -03:00 [INF] Authorization was successful.
+2023-12-28 08:51:11.325 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc) with arguments (["b"]) - Validation state: "Valid"
+2023-12-28 08:51:11.333 -03:00 [INF] Executing action method WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc) with arguments (["b"]) - Validation state: "Valid"
+2023-12-28 08:51:11.337 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 08:51:11.338 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 08:51:11.415 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__Format_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`CategoryId`, `p`.`DepartmentId`, `p`.`Description`, `p`.`ImageUrl`, `p`.`Name`, `p`.`Price`
+FROM `Product` AS `p`
+WHERE `p`.`Name` LIKE @__Format_1
+2023-12-28 08:51:11.417 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__Format_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`CategoryId`, `p`.`DepartmentId`, `p`.`Description`, `p`.`ImageUrl`, `p`.`Name`, `p`.`Price`
+FROM `Product` AS `p`
+WHERE `p`.`Name` LIKE @__Format_1
+2023-12-28 08:51:11.424 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 89.7086ms.
+2023-12-28 08:51:11.424 -03:00 [INF] Executed action method WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 89.7086ms.
+2023-12-28 08:51:11.681 -03:00 [INF] Executing PartialViewResult, running view _ProductSearchResults.
+2023-12-28 08:51:11.681 -03:00 [INF] Executing PartialViewResult, running view _ProductSearchResults.
+2023-12-28 08:51:11.689 -03:00 [INF] Executed PartialViewResult - view _ProductSearchResults executed in 260.1172ms.
+2023-12-28 08:51:11.689 -03:00 [INF] Executed PartialViewResult - view _ProductSearchResults executed in 260.1172ms.
+2023-12-28 08:51:11.690 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc) in 460.1605ms
+2023-12-28 08:51:11.690 -03:00 [INF] Executed action WebSalesMvc.Controllers.ProductsController.SearchProducts (WebSalesMvc) in 460.1605ms
+2023-12-28 08:51:16.630 -03:00 [INF] Route matched with {action = "Create", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc)
+2023-12-28 08:51:16.631 -03:00 [INF] Route matched with {action = "Create", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc)
+2023-12-28 08:51:16.631 -03:00 [INF] Authorization was successful.
+2023-12-28 08:51:16.631 -03:00 [INF] Authorization was successful.
+2023-12-28 08:51:16.833 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) with arguments (["WebSalesMvc.Models.SalesRecordsCreateViewModel"]) - Validation state: "Valid"
+2023-12-28 08:51:16.833 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) with arguments (["WebSalesMvc.Models.SalesRecordsCreateViewModel"]) - Validation state: "Valid"
+2023-12-28 08:51:16.877 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 08:51:16.878 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 08:51:16.905 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`CategoryId`, `p`.`DepartmentId`, `p`.`Description`, `p`.`ImageUrl`, `p`.`Name`, `p`.`Price`, `p.Department`.`Id`, `p.Department`.`Name`
+FROM `Product` AS `p`
+INNER JOIN `Department` AS `p.Department` ON `p`.`DepartmentId` = `p.Department`.`Id`
+WHERE `p`.`Id` = @__id_0
+LIMIT 1
+2023-12-28 08:51:16.906 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `p`.`Id`, `p`.`CategoryId`, `p`.`DepartmentId`, `p`.`Description`, `p`.`ImageUrl`, `p`.`Name`, `p`.`Price`, `p.Department`.`Id`, `p.Department`.`Name`
+FROM `Product` AS `p`
+INNER JOIN `Department` AS `p.Department` ON `p`.`DepartmentId` = `p.Department`.`Id`
+WHERE `p`.`Id` = @__id_0
+LIMIT 1
+2023-12-28 08:51:17.205 -03:00 [INF] Executed DbCommand (25ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `SalesRecord` (`Amount`, `CustomerName`, `Date`, `SellerId`, `Status`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `SalesRecord`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-12-28 08:51:17.205 -03:00 [INF] Executed DbCommand (25ms) [Parameters=[@p0='?' (DbType = Double), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `SalesRecord` (`Amount`, `CustomerName`, `Date`, `SellerId`, `Status`)
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT `Id`
+FROM `SalesRecord`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2023-12-28 08:51:17.282 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 447.8593ms.
+2023-12-28 08:51:17.282 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 447.8593ms.
+2023-12-28 08:51:17.285 -03:00 [INF] Executing RedirectResult, redirecting to /SalesRecords/Index.
+2023-12-28 08:51:17.285 -03:00 [INF] Executing RedirectResult, redirecting to /SalesRecords/Index.
+2023-12-28 08:51:17.287 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) in 656.35160000000008ms
+2023-12-28 08:51:17.287 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Create (WebSalesMvc) in 656.35160000000008ms
+2023-12-28 08:51:17.304 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-28 08:51:17.304 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-28 08:51:17.304 -03:00 [INF] Authorization was successful.
+2023-12-28 08:51:17.304 -03:00 [INF] Authorization was successful.
+2023-12-28 08:51:17.305 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 08:51:17.305 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 08:51:17.305 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 08:51:17.305 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 08:51:17.308 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-28 08:51:17.308 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-28 08:51:17.311 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-28 08:51:17.311 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-28 08:51:17.315 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-28 08:51:17.315 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-28 08:51:17.315 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 10.2393ms.
+2023-12-28 08:51:17.315 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 10.2393ms.
+2023-12-28 08:51:17.315 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-28 08:51:17.315 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-28 08:51:17.317 -03:00 [INF] Executed ViewResult - view Index executed in 1.7052ms.
+2023-12-28 08:51:17.317 -03:00 [INF] Executed ViewResult - view Index executed in 1.7052ms.
+2023-12-28 08:51:17.317 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 13.172ms
+2023-12-28 08:51:17.317 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 13.172ms
+2023-12-28 09:06:57.967 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-28 09:06:57.968 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-28 09:06:57.972 -03:00 [INF] Authorization was successful.
+2023-12-28 09:06:57.972 -03:00 [INF] Authorization was successful.
+2023-12-28 09:06:57.980 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 09:06:57.980 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 09:06:58.005 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 09:06:58.005 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 09:06:58.250 -03:00 [INF] Executed DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-28 09:06:58.251 -03:00 [INF] Executed DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-28 09:06:58.284 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-28 09:06:58.286 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-28 09:06:58.289 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-28 09:06:58.289 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-28 09:06:58.290 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 310.5498ms.
+2023-12-28 09:06:58.290 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 310.5498ms.
+2023-12-28 09:06:58.294 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-28 09:06:58.295 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-28 09:06:58.319 -03:00 [INF] Executed ViewResult - view Index executed in 28.062900000000003ms.
+2023-12-28 09:06:58.319 -03:00 [INF] Executed ViewResult - view Index executed in 28.062900000000003ms.
+2023-12-28 09:06:58.320 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 352.3974ms
+2023-12-28 09:06:58.320 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 352.3974ms
+2023-12-28 09:07:02.385 -03:00 [INF] Route matched with {action = "Index", controller = "Sellers"}. Executing action WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc)
+2023-12-28 09:07:02.386 -03:00 [INF] Route matched with {action = "Index", controller = "Sellers"}. Executing action WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc)
+2023-12-28 09:07:02.386 -03:00 [INF] Authorization was successful.
+2023-12-28 09:07:02.386 -03:00 [INF] Authorization was successful.
+2023-12-28 09:07:02.388 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 09:07:02.388 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 09:07:02.399 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 09:07:02.400 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 09:07:02.404 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-28 09:07:02.405 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-28 09:07:02.409 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 20.201600000000003ms.
+2023-12-28 09:07:02.409 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 20.201600000000003ms.
+2023-12-28 09:07:03.281 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-28 09:07:03.282 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-28 09:07:03.362 -03:00 [INF] Executed ViewResult - view Index executed in 953.32980000000009ms.
+2023-12-28 09:07:03.362 -03:00 [INF] Executed ViewResult - view Index executed in 953.32980000000009ms.
+2023-12-28 09:07:03.363 -03:00 [INF] Executed action WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc) in 977.3821ms
+2023-12-28 09:07:03.363 -03:00 [INF] Executed action WebSalesMvc.Controllers.SellersController.Index (WebSalesMvc) in 977.3821ms
+2023-12-28 09:07:05.175 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-28 09:07:05.175 -03:00 [INF] Route matched with {action = "Index", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc)
+2023-12-28 09:07:05.175 -03:00 [INF] Authorization was successful.
+2023-12-28 09:07:05.175 -03:00 [INF] Authorization was successful.
+2023-12-28 09:07:05.176 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 09:07:05.176 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) - Validation state: "Valid"
+2023-12-28 09:07:05.176 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 09:07:05.176 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 09:07:05.182 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-28 09:07:05.182 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `x`.`Id`, `x`.`Amount`, `x`.`CustomerName`, `x`.`Date`, `x`.`SellerId`, `x`.`Status`, `x.Seller`.`Id`, `x.Seller`.`BaseSalary`, `x.Seller`.`Birthdate`, `x.Seller`.`DepartmentId`, `x.Seller`.`Email`, `x.Seller`.`Name`, `x.Seller`.`Phone`, `x.Seller.Department`.`Id`, `x.Seller.Department`.`Name`
+FROM `SalesRecord` AS `x`
+INNER JOIN `Seller` AS `x.Seller` ON `x`.`SellerId` = `x.Seller`.`Id`
+INNER JOIN `Department` AS `x.Seller.Department` ON `x.Seller`.`DepartmentId` = `x.Seller.Department`.`Id`
+ORDER BY `x`.`Date` DESC
+2023-12-28 09:07:05.187 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-28 09:07:05.187 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-28 09:07:05.190 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-28 09:07:05.190 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `obj`.`Id`, `obj`.`BaseSalary`, `obj`.`Birthdate`, `obj`.`DepartmentId`, `obj`.`Email`, `obj`.`Name`, `obj`.`Phone`, `obj.Department`.`Id`, `obj.Department`.`Name`
+FROM `Seller` AS `obj`
+INNER JOIN `Department` AS `obj.Department` ON `obj`.`DepartmentId` = `obj.Department`.`Id`
+WHERE `obj`.`Id` = @__id_0
+LIMIT 1
+2023-12-28 09:07:05.190 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 14.126700000000001ms.
+2023-12-28 09:07:05.190 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 14.126700000000001ms.
+2023-12-28 09:07:05.190 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-28 09:07:05.191 -03:00 [INF] Executing ViewResult, running view Index.
+2023-12-28 09:07:05.193 -03:00 [INF] Executed ViewResult - view Index executed in 2.4041ms.
+2023-12-28 09:07:05.193 -03:00 [INF] Executed ViewResult - view Index executed in 2.4041ms.
+2023-12-28 09:07:05.193 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 17.48ms
+2023-12-28 09:07:05.193 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Index (WebSalesMvc) in 17.48ms
+2023-12-28 09:22:24.287 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 09:22:24.289 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'ApplicationDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 09:22:24.489 -03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__get_Item_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`AccessFailedCount`, `e`.`ConcurrencyStamp`, `e`.`Email`, `e`.`EmailConfirmed`, `e`.`LockoutEnabled`, `e`.`LockoutEnd`, `e`.`NormalizedEmail`, `e`.`NormalizedUserName`, `e`.`PasswordHash`, `e`.`PhoneNumber`, `e`.`PhoneNumberConfirmed`, `e`.`SecurityStamp`, `e`.`TwoFactorEnabled`, `e`.`UserName`
+FROM `AspNetUsers` AS `e`
+WHERE `e`.`Id` = @__get_Item_0
+LIMIT 1
+2023-12-28 09:22:24.490 -03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__get_Item_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`AccessFailedCount`, `e`.`ConcurrencyStamp`, `e`.`Email`, `e`.`EmailConfirmed`, `e`.`LockoutEnabled`, `e`.`LockoutEnd`, `e`.`NormalizedEmail`, `e`.`NormalizedUserName`, `e`.`PasswordHash`, `e`.`PhoneNumber`, `e`.`PhoneNumberConfirmed`, `e`.`SecurityStamp`, `e`.`TwoFactorEnabled`, `e`.`UserName`
+FROM `AspNetUsers` AS `e`
+WHERE `e`.`Id` = @__get_Item_0
+LIMIT 1
+2023-12-28 09:22:24.767 -03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__user_Id_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `uc`.`Id`, `uc`.`ClaimType`, `uc`.`ClaimValue`, `uc`.`UserId`
+FROM `AspNetUserClaims` AS `uc`
+WHERE `uc`.`UserId` = @__user_Id_0
+2023-12-28 09:22:24.767 -03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__user_Id_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `uc`.`Id`, `uc`.`ClaimType`, `uc`.`ClaimValue`, `uc`.`UserId`
+FROM `AspNetUserClaims` AS `uc`
+WHERE `uc`.`UserId` = @__user_Id_0
+2023-12-28 09:22:24.848 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `role`.`Name`
+FROM `AspNetUserRoles` AS `userRole`
+INNER JOIN `AspNetRoles` AS `role` ON `userRole`.`RoleId` = `role`.`Id`
+WHERE `userRole`.`UserId` = @__userId_0
+2023-12-28 09:22:24.848 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (Size = 255)], CommandType='"Text"', CommandTimeout='30']
+SELECT `role`.`Name`
+FROM `AspNetUserRoles` AS `userRole`
+INNER JOIN `AspNetRoles` AS `role` ON `userRole`.`RoleId` = `role`.`Id`
+WHERE `userRole`.`UserId` = @__userId_0
+2023-12-28 09:22:24.885 -03:00 [INF] Route matched with {action = "Edit", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc)
+2023-12-28 09:22:24.887 -03:00 [INF] Route matched with {action = "Edit", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc)
+2023-12-28 09:22:24.888 -03:00 [INF] Authorization was successful.
+2023-12-28 09:22:24.888 -03:00 [INF] Authorization was successful.
+2023-12-28 09:22:24.896 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) with arguments (["2"]) - Validation state: "Valid"
+2023-12-28 09:22:24.896 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) with arguments (["2"]) - Validation state: "Valid"
+2023-12-28 09:22:24.904 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 09:22:24.905 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 09:22:24.927 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Amount`, `e`.`CustomerName`, `e`.`Date`, `e`.`SellerId`, `e`.`Status`
+FROM `SalesRecord` AS `e`
+WHERE `e`.`Id` = @__get_Item_0
+LIMIT 1
+2023-12-28 09:22:24.928 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Amount`, `e`.`CustomerName`, `e`.`Date`, `e`.`SellerId`, `e`.`Status`
+FROM `SalesRecord` AS `e`
+WHERE `e`.`Id` = @__get_Item_0
+LIMIT 1
+2023-12-28 09:22:24.938 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-28 09:22:24.938 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-28 09:22:24.941 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 43.589600000000004ms.
+2023-12-28 09:22:24.941 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 43.589600000000004ms.
+2023-12-28 09:22:28.801 -03:00 [INF] Executing ViewResult, running view Edit.
+2023-12-28 09:22:28.802 -03:00 [INF] Executing ViewResult, running view Edit.
+2023-12-28 09:22:28.976 -03:00 [INF] Executed ViewResult - view Edit executed in 4034.2301ms.
+2023-12-28 09:22:28.977 -03:00 [INF] Executed ViewResult - view Edit executed in 4034.2301ms.
+2023-12-28 09:22:28.977 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) in 4089.4482000000003ms
+2023-12-28 09:22:28.977 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) in 4089.4482000000003ms
+2023-12-28 09:23:31.680 -03:00 [INF] Route matched with {action = "Edit", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc)
+2023-12-28 09:23:31.681 -03:00 [INF] Route matched with {action = "Edit", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc)
+2023-12-28 09:23:31.686 -03:00 [INF] Authorization was successful.
+2023-12-28 09:23:31.687 -03:00 [INF] Authorization was successful.
+2023-12-28 09:23:31.703 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) with arguments (["2"]) - Validation state: "Valid"
+2023-12-28 09:23:31.703 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) with arguments (["2"]) - Validation state: "Valid"
+2023-12-28 09:23:31.716 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 09:23:31.717 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 09:23:31.860 -03:00 [INF] Executed DbCommand (47ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Amount`, `e`.`CustomerName`, `e`.`Date`, `e`.`SellerId`, `e`.`Status`
+FROM `SalesRecord` AS `e`
+WHERE `e`.`Id` = @__get_Item_0
+LIMIT 1
+2023-12-28 09:23:31.860 -03:00 [INF] Executed DbCommand (47ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Amount`, `e`.`CustomerName`, `e`.`Date`, `e`.`SellerId`, `e`.`Status`
+FROM `SalesRecord` AS `e`
+WHERE `e`.`Id` = @__get_Item_0
+LIMIT 1
+2023-12-28 09:23:31.905 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-28 09:23:31.906 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-28 09:23:31.922 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 217.57500000000002ms.
+2023-12-28 09:23:31.922 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 217.57500000000002ms.
+2023-12-28 09:23:31.925 -03:00 [INF] Executing ViewResult, running view Edit.
+2023-12-28 09:23:31.925 -03:00 [INF] Executing ViewResult, running view Edit.
+2023-12-28 09:23:31.945 -03:00 [INF] Executed ViewResult - view Edit executed in 21.671ms.
+2023-12-28 09:23:31.947 -03:00 [INF] Executed ViewResult - view Edit executed in 21.671ms.
+2023-12-28 09:23:31.947 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) in 265.966ms
+2023-12-28 09:23:31.947 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) in 265.966ms
+2023-12-28 09:23:34.380 -03:00 [INF] Route matched with {action = "Edit", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc)
+2023-12-28 09:23:34.386 -03:00 [INF] Route matched with {action = "Edit", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc)
+2023-12-28 09:23:34.393 -03:00 [INF] Authorization was successful.
+2023-12-28 09:23:34.394 -03:00 [INF] Authorization was successful.
+2023-12-28 09:23:34.401 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) with arguments (["2"]) - Validation state: "Valid"
+2023-12-28 09:23:34.404 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) with arguments (["2"]) - Validation state: "Valid"
+2023-12-28 09:23:34.411 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 09:23:34.412 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 09:23:34.445 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Amount`, `e`.`CustomerName`, `e`.`Date`, `e`.`SellerId`, `e`.`Status`
+FROM `SalesRecord` AS `e`
+WHERE `e`.`Id` = @__get_Item_0
+LIMIT 1
+2023-12-28 09:23:34.447 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Amount`, `e`.`CustomerName`, `e`.`Date`, `e`.`SellerId`, `e`.`Status`
+FROM `SalesRecord` AS `e`
+WHERE `e`.`Id` = @__get_Item_0
+LIMIT 1
+2023-12-28 09:23:34.512 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-28 09:23:34.520 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-28 09:23:34.545 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 117.03620000000001ms.
+2023-12-28 09:23:34.547 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 117.03620000000001ms.
+2023-12-28 09:23:34.548 -03:00 [INF] Executing ViewResult, running view Edit.
+2023-12-28 09:23:34.548 -03:00 [INF] Executing ViewResult, running view Edit.
+2023-12-28 09:23:34.701 -03:00 [INF] Executed ViewResult - view Edit executed in 146.8633ms.
+2023-12-28 09:23:34.705 -03:00 [INF] Executed ViewResult - view Edit executed in 146.8633ms.
+2023-12-28 09:23:34.712 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) in 321.0513ms
+2023-12-28 09:23:34.722 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) in 321.0513ms
+2023-12-28 09:23:37.509 -03:00 [INF] Route matched with {action = "Edit", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc)
+2023-12-28 09:23:37.509 -03:00 [INF] Route matched with {action = "Edit", controller = "SalesRecords"}. Executing action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc)
+2023-12-28 09:23:37.509 -03:00 [INF] Authorization was successful.
+2023-12-28 09:23:37.509 -03:00 [INF] Authorization was successful.
+2023-12-28 09:23:37.510 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) with arguments (["2"]) - Validation state: "Valid"
+2023-12-28 09:23:37.510 -03:00 [INF] Executing action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) with arguments (["2"]) - Validation state: "Valid"
+2023-12-28 09:23:37.511 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 09:23:37.511 -03:00 [INF] Entity Framework Core 2.2.0-rtm-35687 initialized 'WebSalesMvcContext' using provider 'Pomelo.EntityFrameworkCore.MySql' with options: MigrationsAssembly=WebSalesMvc 
+2023-12-28 09:23:37.518 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Amount`, `e`.`CustomerName`, `e`.`Date`, `e`.`SellerId`, `e`.`Status`
+FROM `SalesRecord` AS `e`
+WHERE `e`.`Id` = @__get_Item_0
+LIMIT 1
+2023-12-28 09:23:37.519 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`Id`, `e`.`Amount`, `e`.`CustomerName`, `e`.`Date`, `e`.`SellerId`, `e`.`Status`
+FROM `SalesRecord` AS `e`
+WHERE `e`.`Id` = @__get_Item_0
+LIMIT 1
+2023-12-28 09:23:37.524 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-28 09:23:37.524 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`BaseSalary`, `s`.`Birthdate`, `s`.`DepartmentId`, `s`.`Email`, `s`.`Name`, `s`.`Phone`, `s.Department`.`Id`, `s.Department`.`Name`
+FROM `Seller` AS `s`
+INNER JOIN `Department` AS `s.Department` ON `s`.`DepartmentId` = `s.Department`.`Id`
+2023-12-28 09:23:37.525 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 13.268500000000001ms.
+2023-12-28 09:23:37.525 -03:00 [INF] Executed action method WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 13.268500000000001ms.
+2023-12-28 09:23:37.525 -03:00 [INF] Executing ViewResult, running view Edit.
+2023-12-28 09:23:37.525 -03:00 [INF] Executing ViewResult, running view Edit.
+2023-12-28 09:23:37.531 -03:00 [INF] Executed ViewResult - view Edit executed in 6.2927ms.
+2023-12-28 09:23:37.532 -03:00 [INF] Executed ViewResult - view Edit executed in 6.2927ms.
+2023-12-28 09:23:37.532 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) in 22.8884ms
+2023-12-28 09:23:37.532 -03:00 [INF] Executed action WebSalesMvc.Controllers.SalesRecordsController.Edit (WebSalesMvc) in 22.8884ms

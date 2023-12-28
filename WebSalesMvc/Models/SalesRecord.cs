@@ -16,6 +16,8 @@ namespace WebSalesMvc.Models
         public DateTime Date { get; set; }
 
         [Required]
+        [Display(Name = "Valor")]
+
         public double Amount { get; set; }
 
         [Required]
